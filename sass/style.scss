@@ -23,3 +23,29 @@ img{
     max-width: 100%;
 }
 /*test*/
+/* creation loader*/
+.loader{
+    border: 10px solid #99e2d0;
+    border-top: #9356dc;
+    border-bottom: #ff79da;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+
+/*placement du loader dans la page*/
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+/*animation loader*/
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
