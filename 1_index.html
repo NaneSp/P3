@@ -28,18 +28,20 @@
 <!--main-->        
         <main>
 <!--section1/research-->
-            <form class="research">
-                <i class="research__icon fa-solid fa-location-dot"></i>
-                <input class="research__input" type="text" name="research" placeholder="Paris,Belleville"/>
-            </form>
+            <section id="location">
+                <span >
+                    <i class="location__icon fa-solid fa-location-dot"></i>
+                    <input class="location__icon" type="text" name="research" placeholder="Paris,Belleville"/>
+                </span>
+            </section>
 <!--section2/presentation-->
-            <article id="presentation">
-                <h2>Réservez le menu qui vous convient</h2>
-                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-                <button class="presentation__btn"><a href="#restaurants">Explorez nos restaurants</a></button>
-            </article>
+            <section id="intro">
+                <h2 class="intro__title">Réservez le menu qui vous convient</h2>
+                <p class="intro__description">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+                <button class="intro__btn"><a href="#restaurants">Explorez nos restaurants</a></button>
+            </section>
 <!--section3/tutorial-->            
-            <article id="tuto">
+            <section id="tuto">
                 <h2>Fonctionnement</h2>
                 <nav>
                     <ul class="tuto__list">
@@ -48,11 +50,11 @@
                         <li class="tuto__list--btn"><a href="#"><i class="fa-solid fa-circle-3"></i><i class="fa-solid fa-store"></i>Dégustez au restaurant</a></li>
                     </ul>
                 </nav>
-            </article>
+            </section>
 <!--section4/restaurant-->
-            <article id="restaurants">
+            <section id="restaurants">
                 <h2>Restaurants</h2>
-                <div class="card">
+                <article class="card">
                     <a href="./2_la_palette_du_gout.html">
                         <img class="card__img" src="./sources/pictures/jay.jpg" alt="picture_la_palette_du_gout" title="La_palette_du_goût"/>
                         <p class="card__new">Nouveau</p>
@@ -61,22 +63,24 @@
                     </a>
                     <label for="heart">
                         <input type="checkbox" class="heart" id="heart">
-                        <i class="fa-solid fa-heart"></i>
+                        <span><i class="fa-solid fa-heart checked"></i></span>
+                        <span><i class="fa-thin fa-heart unchecked"></i></span>
                     </label>
-                </div>    
-                <div class="card">    
+                </article>    
+                <article class="card">    
                     <a href="3_la_note_enchantee.html">
                         <img class="card__img"src="./sources/pictures/stil.jpg" alt="picture_la_note_enchantee" title="La_note_enchantee"/>
                         <p class="card__new">Nouveau</p>
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
                     </a>
-                    <label for="heart"></label>
+                    <label for="heart">
                         <input type="checkbox" class="heart" id="heart">
-                        <i class="fa-solid fa-heart"></i>
+                        <span><i class="fa-solid fa-heart checked"></i></span>
+                        <span><i class="fa-thin fa-heart unchecked"></i></span>
                     </label>
-                </div>
-                <div class="card"> 
+                </article>
+                <article class="card"> 
                     <a href="./4_a_la_francaise.html">
                         <img class="card__img"src="./sources/pictures/toa.jpg" alt="picture_a_la_francaise" title="A_la_francaise"/>
                         <h3>À la française</h3>
@@ -84,10 +88,11 @@
                     </a>
                     <label for="heart">
                         <input type="checkbox" class="heart" id="heart">
-                        <i class="fa-solid fa-heart"></i>
+                        <span><i class="fa-solid fa-heart checked"></i></span>
+                        <span><i class="fa-thin fa-heart unchecked"></i></span>
                     </label>
-                </div>  
-                <div class="card"> 
+                </article>  
+                <article class="card"> 
                     <a href="5_le_delice_des_sens.html">
                         <img class="card__img"src="./sources/pictures/louis.jpg" alt="picture_le_delice_des_sens" title="Le_delice_des_sens"/>
                         <h3>Le délice des sens</h3>
@@ -95,14 +100,15 @@
                     </a>
                     <label for="heart">
                         <input type="checkbox" class="heart" id="heart">
-                        <i class="fa-solid fa-heart"></i>
+                        <span><i class="fa-solid fa-heart checked"></i></span>
+                        <span><i class="fa-thin fa-heart unchecked"></i></span>
                     </label>
-                </div>  
-            </article>>
+                </article>  
+            </section>
         </main>
 <!--footer-->        
         <footer>
-            <img src="" alt="logo_ohmyfood" title="ohmyfood"/>
+            <img src="./sources/logo/ohmyfood.png" alt="logo_ohmyfood" title="ohmyfood"/>
             <ul>
                 <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
                 <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
