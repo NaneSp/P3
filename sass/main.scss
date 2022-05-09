@@ -24,29 +24,38 @@ img{
     border: turquoise solid 4px;
 }
 /*test*/
-/* creation loader*/
-.loader{
-    border: 10px solid #99e2d0;
-    border-top: #9356dc;
-    border-bottom: #ff79da;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    -webkit-animation: spin 1.5s linear infinite;
-    -o-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
+/*test button*/
+$clr-primary:#9356dc;
+$clr-secondary:#ff79DA;
+$clr-tertiary:#99e2d0;
+$clr-bg:#f2f2f2;
 
-/*placement du loader dans la page*/
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-}
-/*animation loader*/
-@keyframes spin{
-    0%{
-        transform: rotate(0deg);
+.btn{
+    border: none;
+    border-radius: 35px;
+    padding: 10px;
+    background: radial-gradient(farthest-corner at 10px 10px, lighten($clr-secondary,5)10%,darken($clr-primary,10)100%);
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after{
+            opacity: 1;
+        }
     }
-    100%{
-        transform: rotate(360deg);
+    &::after{
+        border: none;
+        border-radius: 35px;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color:lighten($clr-secondary, 6);
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 250ms;
     }
+
 }

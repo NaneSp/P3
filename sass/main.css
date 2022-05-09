@@ -36,44 +36,34 @@ img {
 }
 
 /*test*/
-/* creation loader*/
-.loader {
-  border: 10px solid #99e2d0;
-  border-top: #9356dc;
-  border-bottom: #ff79da;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  -webkit-animation: spin 1.5s linear infinite;
-  animation: spin 1.5s linear infinite;
-  /*placement du loader dans la page*/
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+/*test button*/
+.btn {
+  border: none;
+  border-radius: 35px;
+  padding: 10px;
+  background: radial-gradient(farthest-corner at 10px 10px, #ff93e1 10%, #782cd3 100%);
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
-/*animation loader*/
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+.btn:hover::after {
+  opacity: 1;
 }
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+
+.btn::after {
+  border: none;
+  border-radius: 35px;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #ff98e2;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
 }
 /*# sourceMappingURL=main.css.map */
