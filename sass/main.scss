@@ -1,35 +1,43 @@
+/*import*/
+@import "./base/_base";
+@import "./components/_buttons";
+@import "./layouts/_container";
+@import "./layouts/_footer";
+@import "./layouts/_header";
+@import "./utils/_functions";
+@import "./utils/_mixins";
+@import "./utils/_placeholders";
+@import "./utils/_variables";
 
-*{ box-sizing: border-box;}
-
-body{
-    font-family: "roboto",sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-main{
-    margin: auto;
-    padding: 20px;
+header{
     width: 100%;
+    h1{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    img{
+        width: 40%;
+    }
+    }
 }
-.card__img{
-    max-width: 100%;  
-}
-img{
-    max-width: 100%;
-    border: turquoise solid 4px;
-}
-/*test*/
-/*test button*/
-$clr-primary:#9356dc;
-$clr-secondary:#ff79DA;
-$clr-tertiary:#99e2d0;
-$clr-bg:#f2f2f2;
 
+#location{
+    border: pink solid 5px;
+}
+
+
+#intro{
+    border: green solid 5px;
+}
+
+
+
+
+
+
+
+/*test button*/
 .btn{
     border: none;
     border-radius: 35px;
