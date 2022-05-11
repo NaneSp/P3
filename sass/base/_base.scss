@@ -4,7 +4,9 @@
 
 /*general*/
 body{
-    margin: 0;
+    max-width: 600px;
+    min-width: 300px;
+    margin: auto;
     padding: 0;
     background-color: white;
 }
