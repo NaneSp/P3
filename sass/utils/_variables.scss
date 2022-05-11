@@ -4,8 +4,13 @@ $clr-secondary:#ff79DA;
 $clr-tertiary:#99e2d0;
 
 /*background font site*/
-$clr-bg:#d1d5da;
-$clr-bg-lighten:#d1d5daa7;
+$clr-bg:#e1e3e5b3;
+$clr-bg-lighten:#e1e3e528;
+
+/*box shadow*/
+$shadow:0 5px 5px rgba(0, 0, 0, 0.659);
+$shadow-darken:0 8px 10px rgba(0, 0, 0, 0.599);
+$shadow-ligthen:0 5px 10px rgba(0, 0, 0, 0.403);
 
 /*typography*/
 $police-txt:"roboto","sans-serif";

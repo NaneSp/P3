@@ -20,11 +20,23 @@ img {
   max-width: 100%;
 }
 
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 /*web site colors*/
 /*background font site*/
+/*box shadow*/
 /*typography*/
 header {
   width: 100%;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.659);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.659);
+  padding: 20px 0 15px 0;
 }
 
 header h1 {
@@ -39,45 +51,167 @@ header h1 {
 }
 
 header h1 img {
-  width: 40%;
+  width: 35%;
 }
 
 #location {
-  border: pink solid 5px;
+  padding: 15px;
+  background-color: #e1e3e5b3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#location input {
+  border: none;
+  background-color: #e1e3e53b;
+  font-family: "roboto", "sans-serif";
+  font-size: medium;
+  font-weight: bold;
+}
+
+#location i {
+  font-size: large;
+  padding-right: 10px;
 }
 
 #intro {
-  border: green solid 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px 50px 10px;
+  font-family: "roboto", "sans-serif";
+  background-color: #e1e3e528;
 }
 
-/*test button*/
-.btn {
+#intro .intro__title {
+  margin: 0;
+  font-size: xx-large;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#intro .intro__description {
+  padding: 0 10px 20px 10px;
+  font-size: large;
+  color: grey;
+  text-align: center;
+}
+
+#intro .btn {
+  font-size: large;
   border: none;
   border-radius: 35px;
-  padding: 10px;
-  background: radial-gradient(farthest-corner at 10px 10px, #ff93e1 10%, #782cd3 100%);
+  padding: 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.403);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.403);
+  background: radial-gradient(ellipse at top, #ff93e1 10%, #782cd3 100%);
   color: #fff;
   position: relative;
   z-index: 1;
 }
 
-.btn:hover::after {
+#intro .btn:hover::after {
   opacity: 1;
 }
 
-.btn::after {
+#intro .btn::after {
   border: none;
   border-radius: 35px;
+  -webkit-box-shadow: 0 8px 10px rgba(0, 0, 0, 0.599);
+          box-shadow: 0 8px 10px rgba(0, 0, 0, 0.599);
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #ff98e2;
+  background: radial-gradient(ellipse at top, #ffc6ef 20%, #9052db 70%);
   z-index: -1;
   opacity: 0;
   -webkit-transition: opacity 250ms;
   transition: opacity 250ms;
 }
+
+#tuto {
+  border: green solid;
+  width: 100%;
+  font-family: "roboto", "sans-serif";
+  margin: 0 20px 0 20px;
+}
+
+#tuto nav {
+  border: gold solid;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#tuto nav .tuto__list {
+  border: violet solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 80%;
+  padding: 0;
+}
+
+#tuto nav .tuto__list .tuto__list--btn {
+  font-size: large;
+  padding: 25px;
+  background-color: #e1e3e528;
+  border: none;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.403);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.403);
+  margin-bottom: 20px;
+}
+
+#tuto nav .tuto__list .tuto__list--btn a {
+  border: red solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+}
+
+#tuto nav .tuto__list .tuto__list--btn a:hover {
+  color: #ff79DA;
+}
+
+#tuto nav .tuto__list .tuto__list--btn i {
+  font-size: x-large;
+  padding-right: 20px;
+}
+
+#tuto nav .tuto__list .tuto__list--btn p {
+  border: blue solid;
+  text-align: center;
+}
+
+/*test button*/
 /*# sourceMappingURL=main.css.map */

@@ -11,26 +11,141 @@
 
 header{
     width: 100%;
+    box-shadow:$shadow;
+    padding: 20px 0 15px 0;
     h1{
         width: 100%;
         margin: 0;
         display: flex;
         justify-content: center;
     img{
-        width: 40%;
+        width: 35%;
     }
     }
 }
 
 #location{
-    border: pink solid 5px;
+    padding: 15px;
+    background-color: $clr-bg;
+    display: flex;
+    justify-content: center;
+    input{
+        border: none;
+        background-color: #e1e3e53b;
+        font-family: $police-txt;
+        font-size:medium; 
+        font-weight: bold;   
+    }
+    i{
+        font-size: large;
+        padding-right: 10px;
+    }
 }
 
 
 #intro{
-    border: green solid 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 50px 10px;
+    font-family: $police-txt;
+    background-color: $clr-bg-lighten;
+    .intro__title{
+        margin: 0;
+        font-size:xx-large;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .intro__description{
+        padding: 0 10px 20px 10px;
+        font-size: large;
+        color: grey;
+        text-align: center;
+    }
+    .btn{
+        font-size: large;
+        border: none;
+        border-radius: 35px;
+        padding: 20px;
+        box-shadow: $shadow-ligthen;
+        background: radial-gradient(ellipse at top, lighten($clr-secondary,5)10%,darken($clr-primary,10)100%);
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        &:hover {
+            &::after{
+                opacity: 1;
+            }
+        }
+        &::after{
+            border: none;
+            border-radius: 35px;
+            box-shadow: $shadow-darken;
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: radial-gradient(ellipse at top, lighten($clr-secondary,15)20%,darken($clr-primary,1)70%);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 250ms;
+        }
+    
+    }
+
 }
 
+
+#tuto{
+    border: green solid;
+    width: 100%;
+    font-family: $police-txt;
+    margin: 0 20px 0 20px;
+    nav{
+        border: gold solid;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .tuto__list{
+            border: violet solid;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            width: 80%;
+            padding: 0;
+            .tuto__list--btn{
+                font-size: large;
+                padding: 25px;
+                background-color: $clr-bg-lighten;
+                border: none;
+                border-radius: 20px;
+                box-shadow: $shadow-ligthen;
+                margin-bottom: 20px;
+                a{
+                    border: red solid;
+                    display: flex;
+                    align-items: center;
+                    color: black;
+                }
+                a:hover{
+                    color: $clr-secondary;
+                }
+                i{
+                    font-size: x-large;
+                    padding-right: 20px;
+                }
+                p{
+                    border: blue solid;
+                    text-align: center;
+                }
+                }
+            }
+        }
+    
+        }
+    
 
 
 
@@ -38,32 +153,3 @@ header{
 
 
 /*test button*/
-.btn{
-    border: none;
-    border-radius: 35px;
-    padding: 10px;
-    background: radial-gradient(farthest-corner at 10px 10px, lighten($clr-secondary,5)10%,darken($clr-primary,10)100%);
-    color: #fff;
-    position: relative;
-    z-index: 1;
-    &:hover {
-        &::after{
-            opacity: 1;
-        }
-    }
-    &::after{
-        border: none;
-        border-radius: 35px;
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-color:lighten($clr-secondary, 6);
-        z-index: -1;
-        opacity: 0;
-        transition: opacity 250ms;
-    }
-
-}
