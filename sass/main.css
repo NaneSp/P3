@@ -7,19 +7,12 @@
 
 /*general*/
 body {
-  max-width: 600px;
+  max-width: 500px;
   min-width: 300px;
   margin: auto;
   padding: 0;
   background-color: white;
-}
-
-.card__img {
-  max-width: 100%;
-}
-
-img {
-  max-width: 100%;
+  cursor: pointer;
 }
 
 li {
@@ -34,8 +27,16 @@ a {
 /*background font site*/
 /*box shadow*/
 /*typography*/
+/*button*/
+/*home page*/
+h2 {
+  font-size: xx-large;
+  font-family: "roboto", "sans-serif";
+}
+
 header {
   width: 100%;
+  height: 5%;
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.659);
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.659);
   padding: 20px 0 15px 0;
@@ -57,6 +58,8 @@ header h1 img {
 }
 
 #location {
+  width: 100%;
+  height: 5%;
   padding: 15px;
   background-color: #e1e3e5b3;
   display: -webkit-box;
@@ -81,6 +84,8 @@ header h1 img {
 }
 
 #intro {
+  width: 100%;
+  height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,7 +98,7 @@ header h1 img {
           align-items: center;
   padding: 10px 10px 50px 10px;
   font-family: "roboto", "sans-serif";
-  background-color: #e1e3e528;
+  background-color: #e1e3e548;
 }
 
 #intro .intro__title {
@@ -147,21 +152,19 @@ header h1 img {
 
 #tuto {
   width: 100%;
+  height: 20%;
   font-family: "roboto", "sans-serif";
   padding: 10px;
 }
 
 #tuto nav {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 90%;
 }
 
 #tuto nav .tuto__list {
+  width: 97%;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,14 +175,12 @@ header h1 img {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  width: 80%;
-  padding: 0;
 }
 
 #tuto nav .tuto__list .tuto__list--btn {
   font-size: large;
-  padding: 25px 25px 25px 0;
-  background-color: #e1e3e528;
+  padding: 25px 25px 30px 0;
+  background-color: #e1e3e548;
   border: none;
   border-radius: 20px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.222);
@@ -188,7 +189,7 @@ header h1 img {
 }
 
 #tuto nav .tuto__list .tuto__list--btn:hover {
-  background-color: #9256dc3a;
+  background-color: #9256dc21;
   -webkit-box-shadow: 0 8px 10px rgba(0, 0, 0, 0.599);
           box-shadow: 0 8px 10px rgba(0, 0, 0, 0.599);
 }
@@ -230,12 +231,143 @@ header h1 img {
 
 #tuto nav .tuto__list .tuto__list--btn i {
   font-size: x-large;
+  color: grey;
+  padding: 0 40px 0 40px;
+}
+
+#tuto nav .tuto__list .tuto__list--btn i:hover {
   color: #9356dc;
-  padding: 0 20px 0 30px;
 }
 
 #tuto nav .tuto__list .tuto__list--btn p {
-  text-align: center;
+  font-size: larger;
   margin: 0;
+}
+
+#restaurants {
+  font-family: "roboto", "sans-serif";
+  width: 100%;
+  height: 65%;
+  background-color: #e1e3e548;
+  padding: 20px;
+}
+
+#restaurants .restaurants__set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#restaurants .card {
+  border: none;
+  width: 97%;
+  border-radius: 20px;
+  background-color: #fff;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.222);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.222);
+}
+
+#restaurants .card:hover {
+  -webkit-box-shadow: 0 8px 10px rgba(0, 0, 0, 0.599);
+          box-shadow: 0 8px 10px rgba(0, 0, 0, 0.599);
+}
+
+#restaurants .card__img {
+  border: none;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#restaurants .card__new {
+  margin: 0;
+  width: 84px;
+  margin-left: 340px;
+  margin-top: -230px;
+  background-color: #99e2d0;
+  text-align: center;
+  color: #0e906f;
+  font-weight: bold;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  position: absolute;
+}
+
+#restaurants .card #palette, #restaurants .card #note, #restaurants .card #francaise, #restaurants .card #delice {
+  margin: 0;
+  padding: 10px 0 2px 10px;
+  color: black;
+}
+
+#restaurants .card__location {
+  margin: 0;
+  padding: 0 0 20px 10px;
+  color: black;
+  font-weight: lighter;
+}
+
+#restaurants .card .heart {
+  border: #0e906f solid;
+  width: 27px;
+  height: 30px;
+  position: absolute;
+  margin-left: 380px;
+  margin-top: -55px;
+}
+
+#footer {
+  background-color: rgba(35, 30, 30, 0.948);
+  color: white;
+}
+
+#footer h5 {
+  font-family: "shrikhand", "sans-serif";
+  font-size: large;
+  margin: 0;
+  padding: 20px;
+}
+
+#footer ul {
+  margin: 0;
+  padding: 0 20px 40px 20px;
+}
+
+#footer ul li {
+  padding: 5px;
+}
+
+#footer ul a {
+  color: white;
+  font-family: "roboto", "sans-serif";
+}
+
+#footer ul a .forks {
+  font-size: medium;
+  padding-right: 10px;
+}
+
+#footer ul a .hand {
+  font-size: small;
+  padding-right: 10px;
+}
+
+/*restaurants*/
+.picture {
+  width: 100%;
+}
+
+.picture img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

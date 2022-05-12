@@ -4,19 +4,12 @@
 
 /*general*/
 body{
-    max-width: 600px;
+    max-width: 500px;
     min-width: 300px;
     margin: auto;
     padding: 0;
     background-color: white;
-}
-
-
-.card__img{
-    max-width: 100%;  
-}
-img{
-    max-width: 100%;
+    cursor: pointer;
 }
 
 li{
