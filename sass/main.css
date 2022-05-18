@@ -114,17 +114,26 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .menu .menu__starter, .menu .menu__maincourse, .menu .menu__deserts {
+    width: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
-  .menu .order {
-    width: 28%;
+  .menu .menu__starter .order, .menu .menu__maincourse .order, .menu .menu__deserts .order {
+    width: 97%;
   }
 }
 
@@ -209,17 +218,26 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .menu .menu__starter, .menu .menu__maincourse, .menu .menu__deserts {
+    width: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
-  .menu .order {
-    width: 28%;
+  .menu .menu__starter .order, .menu .menu__maincourse .order, .menu .menu__deserts .order {
+    width: 97%;
   }
 }
 
@@ -551,18 +569,18 @@ a {
 }
 
 /*section2/3/4 menu/starter/main course/deserts*/
-.menu {
+.menu__starter {
   background-color: #f6f6f6;
   padding: 20px 10px 20px 10px;
   font-family: "roboto", "sans-serif";
 }
 
-.menu .title_underline {
+.menu__starter .title_underline {
   border-bottom: #99e2d0 solid 3px;
   padding-bottom: 3px;
 }
 
-.menu .order {
+.menu__starter .order {
   margin: 25px 0 25px 0;
   border: none;
   border-radius: 15px;
@@ -572,19 +590,19 @@ a {
   position: relative;
 }
 
-.menu .order:hover {
+.menu__starter .order:hover {
   -webkit-box-shadow: 0 8px 10px lightgray;
           box-shadow: 0 8px 10px lightgray;
 }
 
-.menu .order__name {
+.menu__starter .order__name {
   margin: 0;
   font-size: 15px;
   color: #111111;
   padding: 10px 0 5px 10px;
 }
 
-.menu .order__name--with {
+.menu__starter .order__name--with {
   margin: 0;
   padding: 0 0 10px 10px;
   font-size: 12.5px;
@@ -592,7 +610,7 @@ a {
   color: #5c5c5c;
 }
 
-.menu .order__price {
+.menu__starter .order__price {
   width: 10%;
   right: 10px;
   bottom: -10px;
@@ -601,7 +619,7 @@ a {
   position: absolute;
 }
 
-.menu .order__spin {
+.menu__starter .order__spin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,7 +642,161 @@ a {
   z-index: -1;
 }
 
-.menu .order__spin .order__spin:hover {
+.menu__starter .order__spin .order__spin:hover {
+  z-index: 1;
+}
+
+.menu__maincourse {
+  background-color: #f6f6f6;
+  padding: 20px 10px 20px 10px;
+  font-family: "roboto", "sans-serif";
+}
+
+.menu__maincourse .title_underline {
+  border-bottom: #99e2d0 solid 3px;
+  padding-bottom: 3px;
+}
+
+.menu__maincourse .order {
+  margin: 25px 0 25px 0;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 10px #e6e6e6;
+          box-shadow: 0 5px 10px #e6e6e6;
+  position: relative;
+}
+
+.menu__maincourse .order:hover {
+  -webkit-box-shadow: 0 8px 10px lightgray;
+          box-shadow: 0 8px 10px lightgray;
+}
+
+.menu__maincourse .order__name {
+  margin: 0;
+  font-size: 15px;
+  color: #111111;
+  padding: 10px 0 5px 10px;
+}
+
+.menu__maincourse .order__name--with {
+  margin: 0;
+  padding: 0 0 10px 10px;
+  font-size: 12.5px;
+  font-weight: lighter;
+  color: #5c5c5c;
+}
+
+.menu__maincourse .order__price {
+  width: 10%;
+  right: 10px;
+  bottom: -10px;
+  font-weight: bold;
+  color: #111111;
+  position: absolute;
+}
+
+.menu__maincourse .order__spin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: #99e2d0;
+  color: white;
+  position: absolute;
+  height: 100%;
+  width: 17%;
+  border-radius: 0 15px 15px 0;
+  padding: 10px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.menu__maincourse .order__spin .order__spin:hover {
+  z-index: 1;
+}
+
+.menu__deserts {
+  background-color: #f6f6f6;
+  padding: 20px 10px 20px 10px;
+  font-family: "roboto", "sans-serif";
+}
+
+.menu__deserts .title_underline {
+  border-bottom: #99e2d0 solid 3px;
+  padding-bottom: 3px;
+}
+
+.menu__deserts .order {
+  margin: 25px 0 25px 0;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 10px #e6e6e6;
+          box-shadow: 0 5px 10px #e6e6e6;
+  position: relative;
+}
+
+.menu__deserts .order:hover {
+  -webkit-box-shadow: 0 8px 10px lightgray;
+          box-shadow: 0 8px 10px lightgray;
+}
+
+.menu__deserts .order__name {
+  margin: 0;
+  font-size: 15px;
+  color: #111111;
+  padding: 10px 0 5px 10px;
+}
+
+.menu__deserts .order__name--with {
+  margin: 0;
+  padding: 0 0 10px 10px;
+  font-size: 12.5px;
+  font-weight: lighter;
+  color: #5c5c5c;
+}
+
+.menu__deserts .order__price {
+  width: 10%;
+  right: 10px;
+  bottom: -10px;
+  font-weight: bold;
+  color: #111111;
+  position: absolute;
+}
+
+.menu__deserts .order__spin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: #99e2d0;
+  color: white;
+  position: absolute;
+  height: 100%;
+  width: 17%;
+  border-radius: 0 15px 15px 0;
+  padding: 10px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.menu__deserts .order__spin .order__spin:hover {
   z-index: 1;
 }
 

@@ -70,20 +70,24 @@
         }
     }
 /*------------restaurants pages-----------------------*/
-/*section2/3/4 menu/starter/main course/deserts*/
 
+
+/*section2/3/4 menu/starter/main course/deserts*/
     .menu{
         display: flex;
-        justify-content:space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        .order{
-            width: 28%;
+        justify-content: center;
+        width: 100%;
+        .menu__starter, .menu__maincourse, .menu__deserts{
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .order{
+                width: 97%;
+            }
         }
-
     }
 }
-
 
 
     
@@ -162,12 +166,16 @@
 
     .menu{
         display: flex;
-        justify-content:space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        .order{
-            width: 28%;
+        justify-content: center;
+        width: 100%;
+        .menu__starter, .menu__maincourse, .menu__deserts{
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .order{
+                width: 97%;
+            }
         }
-
     }
 }
