@@ -1,4 +1,9 @@
+@charset "UTF-8";
 /*import*/
+/*web site colors*/
+/*background font site*/
+/*box shadow*/
+/*typography*/
 /*dimension*/
 * {
   -webkit-box-sizing: border-box;
@@ -7,12 +12,16 @@
 
 /*general*/
 body {
-  max-width: 700px;
-  min-width: 300px;
+  max-width: 768px;
   margin: auto;
   padding: 0;
   background-color: white;
   cursor: pointer;
+}
+
+h2 {
+  font-size: larger;
+  font-family: "roboto", "sans-serif";
 }
 
 li {
@@ -23,37 +32,249 @@ a {
   text-decoration: none;
 }
 
-/*web site colors*/
-/*background font site*/
-/*box shadow*/
-/*typography*/
-/*button*/
-/*home page*/
-h2 {
-  font-size: larger;
-  font-family: "roboto", "sans-serif";
+/* sur les écrans, quand la largeur de la fenêtre est comprise entre 768px et 992px*/
+/*tablette*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    max-width: 992px;
+    min-width: 768px;
+    -webkit-box-shadow: 0 5px 10px #e6e6e6;
+            box-shadow: 0 5px 10px #e6e6e6;
+  }
+  /*----------home page------------------*/
+  /*section2/presenation*/
+  #intro {
+    margin: 0;
+  }
+  #intro .intro__description {
+    margin: 0;
+  }
+  /*section3/tutorial*/
+  #tuto {
+    width: 100%;
+  }
+  #tuto .tuto__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  #tuto .tuto__list__btn {
+    width: 33%;
+    margin: 15px;
+  }
+  /*section4/restaurants*/
+  #restaurants {
+    width: 100%;
+  }
+  #restaurants .restaurants__set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #restaurants .restaurants__set .card {
+    width: 33%;
+    margin: 15px;
+  }
+  /*footer media query desktop*/
+  #footer {
+    width: 100%;
+    text-align: center;
+  }
+  #footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  #footer ul li {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /*------------restaurants pages-----------------------*/
+  /*section2/3/4 menu/starter/main course/deserts*/
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu .order {
+    width: 28%;
+  }
 }
 
-header {
-  width: 100%;
-  height: 5%;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.222);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.222);
-  padding: 20px 0 15px 0;
-  z-index: 1;
+/*sur les écrans, quand la largeur de la fenêtre est > à 992px*/
+/*deskotp*/
+@media screen and (min-width: 992px) {
+  body {
+    min-width: 992px;
+    -webkit-box-shadow: 0 5px 10px #e6e6e6;
+            box-shadow: 0 5px 10px #e6e6e6;
+  }
+  /*----------home page------------------*/
+  /*section2/presenation*/
+  #intro {
+    margin: 0;
+  }
+  #intro .intro__description {
+    margin: 0;
+  }
+  /*section3/tutorial*/
+  #tuto {
+    width: 100%;
+  }
+  #tuto .tuto__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  #tuto .tuto__list__btn {
+    width: 33%;
+    margin: 15px;
+  }
+  /*section4/restaurants*/
+  #restaurants {
+    width: 100%;
+  }
+  #restaurants .restaurants__set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #restaurants .restaurants__set .card {
+    width: 34%;
+  }
+  /*footer media query desktop*/
+  #footer {
+    width: 100%;
+    text-align: center;
+  }
+  #footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  #footer ul li {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /*------------restaurants pages-----------------------*/
+  /*section2/3/4 menu/starter/main course/deserts*/
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu .order {
+    width: 28%;
+  }
+}
+
+#btn {
+  width: 190px;
+  font-size: small;
+  border: none;
+  border-radius: 35px;
+  padding: 15px;
+  -webkit-box-shadow: 0 5px 10px #e6e6e6;
+          box-shadow: 0 5px 10px #e6e6e6;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(10%, #ff93e1), to(#782cd3));
+  background: linear-gradient(to bottom right, #ff93e1 10%, #782cd3 100%);
+  color: #fff;
   position: relative;
+  z-index: 1;
 }
 
-header h1 {
-  width: 100%;
-  margin: 0;
-  text-align: center;
+#btn:hover::after {
+  opacity: 1;
 }
 
-header h1 img {
-  width: 35%;
+#btn::after {
+  border: none;
+  border-radius: 35px;
+  -webkit-box-shadow: 0 8px 10px lightgray;
+          box-shadow: 0 8px 10px lightgray;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #ffc6ef), color-stop(70%, #9052db));
+  background: linear-gradient(to bottom right, #ffc6ef 20%, #9052db 70%);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
 }
 
+/*set button restaurant*/
+.btn_resto {
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 40px;
+}
+
+/*----------home page------------------*/
+/*section1/research*/
 #location {
   width: 100%;
   height: 5%;
@@ -67,23 +288,32 @@ header h1 img {
           justify-content: center;
 }
 
+#location span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #location input {
   width: 65%;
-  text-align: right;
+  text-align: center;
   border: none;
   background-color: #e1e3e53b;
   font-family: "roboto", "sans-serif";
-  font-size: medium;
-  font-weight: bold;
+  font-size: small;
+  color: #353535;
 }
 
 #location i {
   font-size: large;
+  color: #353535;
 }
 
+/*section2/presenation*/
 #intro {
-  width: 100%;
-  height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,49 +339,11 @@ header h1 img {
 #intro .intro__description {
   padding: 0 10px 20px 10px;
   font-size: medium;
-  color: grey;
+  color: #5c5c5c;
   text-align: center;
 }
 
-#btn {
-  cursor: pointer;
-  width: 70%;
-  font-size: small;
-  border: none;
-  border-radius: 35px;
-  padding: 15px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.222);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.222);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(10%, #ff93e1), to(#782cd3));
-  background: linear-gradient(to bottom right, #ff93e1 10%, #782cd3 100%);
-  color: #fff;
-  position: relative;
-  z-index: 1;
-}
-
-#btn:hover::after {
-  opacity: 1;
-}
-
-#btn::after {
-  border: none;
-  border-radius: 35px;
-  -webkit-box-shadow: 0 8px 10px rgba(0, 0, 0, 0.599);
-          box-shadow: 0 8px 10px rgba(0, 0, 0, 0.599);
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, #ffc6ef), color-stop(70%, #9052db));
-  background: linear-gradient(to bottom right, #ffc6ef 20%, #9052db 70%);
-  z-index: -1;
-  opacity: 0;
-  -webkit-transition: opacity 250ms;
-  transition: opacity 250ms;
-}
-
+/*section3/tutorial*/
 #tuto {
   width: 100%;
   height: 20%;
@@ -161,23 +353,11 @@ header h1 img {
 
 #tuto nav {
   width: 100%;
-  height: 90%;
 }
 
 #tuto nav .tuto__list {
-  width: 97%;
+  width: 98%;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  position: relative;
 }
 
 #tuto nav .tuto__list__btn {
@@ -186,15 +366,15 @@ header h1 img {
   background-color: #f6f6f6;
   border: none;
   border-radius: 20px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.222);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.222);
+  -webkit-box-shadow: 0 5px 10px #e6e6e6;
+          box-shadow: 0 5px 10px #e6e6e6;
   margin-bottom: 20px;
 }
 
 #tuto nav .tuto__list__btn:hover {
   background-color: #f5edff;
-  -webkit-box-shadow: 0 8px 10px rgba(0, 0, 0, 0.599);
-          box-shadow: 0 8px 10px rgba(0, 0, 0, 0.599);
+  -webkit-box-shadow: 0 8px 10px lightgray;
+          box-shadow: 0 8px 10px lightgray;
 }
 
 #tuto nav .tuto__list__btn:hover i {
@@ -233,12 +413,11 @@ header h1 img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: black;
 }
 
 #tuto nav .tuto__list__btn i {
   font-size: large;
-  color: grey;
+  color: #7e7e7e;
   padding: 0 20px 0 20px;
 }
 
@@ -247,6 +426,7 @@ header h1 img {
   margin: 0;
 }
 
+/*section4/restaurants*/
 #restaurants {
   font-family: "roboto", "sans-serif";
   width: 100%;
@@ -255,33 +435,20 @@ header h1 img {
   padding: 20px;
 }
 
-#restaurants .restaurants__set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 #restaurants .card {
   border: none;
   width: 97%;
   border-radius: 20px;
   background-color: #fff;
   margin-bottom: 25px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.222);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.222);
+  -webkit-box-shadow: 0 5px 10px #e6e6e6;
+          box-shadow: 0 5px 10px #e6e6e6;
   position: relative;
 }
 
 #restaurants .card:hover {
-  -webkit-box-shadow: 0 8px 10px rgba(0, 0, 0, 0.599);
-          box-shadow: 0 8px 10px rgba(0, 0, 0, 0.599);
+  -webkit-box-shadow: 0 8px 10px lightgray;
+          box-shadow: 0 8px 10px lightgray;
 }
 
 #restaurants .card__img {
@@ -295,7 +462,7 @@ header h1 img {
 
 #restaurants .card__new {
   margin: 0;
-  width: 30%;
+  width: 80px;
   top: 10px;
   right: 10px;
   background-color: #99e2d0;
@@ -318,7 +485,7 @@ header h1 img {
 #restaurants .card__location {
   margin: 0;
   padding: 0 0 20px 10px;
-  color: black;
+  color: #5c5c5c;
   font-size: medium;
   font-weight: lighter;
 }
@@ -332,69 +499,8 @@ header h1 img {
   right: 15px;
 }
 
-#footer {
-  background-color: #353535;
-  color: white;
-}
-
-#footer h5 {
-  font-family: "shrikhand", "sans-serif";
-  font-size: large;
-  margin: 0;
-  padding: 20px;
-}
-
-#footer ul {
-  margin: 0;
-  padding: 0 20px 40px 20px;
-}
-
-#footer ul li {
-  padding: 5px;
-}
-
-#footer ul a {
-  color: white;
-  font-family: "roboto", "sans-serif";
-}
-
-#footer ul a .forks {
-  font-size: medium;
-  padding-right: 10px;
-}
-
-#footer ul a .hand {
-  font-size: small;
-  padding-right: 10px;
-}
-
-/*restaurants*/
-#header_resto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#header_resto .arrow {
-  padding-left: 20px;
-  font-size: large;
-  color: black;
-}
-
-#header_resto h1 {
-  width: 100%;
-}
-
-#header_resto h1 img {
-  width: 45%;
-}
-
+/*------------restaurants pages-----------------------*/
+/*section1/picture + restaurant name*/
 .picture {
   width: 100%;
   height: 11%;
@@ -444,11 +550,10 @@ header h1 img {
   background-color: #9356dc;
 }
 
+/*section2/3/4 menu/starter/main course/deserts*/
 .menu {
-  width: 100%;
-  height: 74%;
   background-color: #f6f6f6;
-  padding: 20px;
+  padding: 20px 10px 20px 10px;
   font-family: "roboto", "sans-serif";
 }
 
@@ -458,23 +563,24 @@ header h1 img {
 }
 
 .menu .order {
-  border: none;
-  border-radius: 20px;
-  background-color: white;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.222);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.222);
   margin: 25px 0 25px 0;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 10px #e6e6e6;
+          box-shadow: 0 5px 10px #e6e6e6;
   position: relative;
 }
 
 .menu .order:hover {
-  -webkit-box-shadow: 0 8px 10px rgba(0, 0, 0, 0.599);
-          box-shadow: 0 8px 10px rgba(0, 0, 0, 0.599);
+  -webkit-box-shadow: 0 8px 10px lightgray;
+          box-shadow: 0 8px 10px lightgray;
 }
 
 .menu .order__name {
   margin: 0;
   font-size: 15px;
+  color: #111111;
   padding: 10px 0 5px 10px;
 }
 
@@ -483,34 +589,123 @@ header h1 img {
   padding: 0 0 10px 10px;
   font-size: 12.5px;
   font-weight: lighter;
+  color: #5c5c5c;
 }
 
 .menu .order__price {
-  border: orangered solid;
   width: 10%;
-  right: 20px;
+  right: 10px;
   bottom: -10px;
   font-weight: bold;
+  color: #111111;
   position: absolute;
 }
 
 .menu .order__spin {
-  border: yellow solid;
-  position: absolute;
-  font-size: large;
-  right: 40px;
-  bottom: -27px;
-}
-
-/*set button restaurant*/
-.btn_resto {
-  background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: #99e2d0;
+  color: white;
+  position: absolute;
+  height: 100%;
+  width: 17%;
+  border-radius: 0 15px 15px 0;
+  padding: 10px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.menu .order__spin .order__spin:hover {
+  z-index: 1;
+}
+
+#footer {
+  background-color: #353535;
+  color: white;
+}
+
+#footer h5 {
+  font-family: "shrikhand", "sans-serif";
+  font-size: large;
+  margin: 0;
+  padding: 20px;
+}
+
+#footer ul {
+  margin: 0;
+  padding: 0 20px 40px 20px;
+}
+
+#footer ul li {
+  padding: 5px;
+}
+
+#footer ul a {
+  color: white;
+  font-family: "roboto", "sans-serif";
+}
+
+#footer ul a .forks {
+  font-size: medium;
+  padding-right: 10px;
+}
+
+#footer ul a .hand {
+  font-size: small;
+  padding-right: 10px;
+}
+
+/*header home page*/
+header {
+  -webkit-box-shadow: 0 8px 10px lightgray;
+          box-shadow: 0 8px 10px lightgray;
+  padding: 20px 0 15px 0;
+  z-index: 1;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+header h1 img {
+  width: 40%;
+}
+
+/*header restaurants pages*/
+#header_resto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header_resto .arrow {
+  padding-left: 20px;
+  font-size: large;
+  color: black;
+}
+
+#header_resto h1 {
+  width: 100%;
+}
+
+#header_resto h1 img {
+  width: 45%;
 }
 /*# sourceMappingURL=main.css.map */

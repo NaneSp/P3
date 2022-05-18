@@ -1,0 +1,173 @@
+/* sur les écrans, quand la largeur de la fenêtre est comprise entre 768px et 992px*/ /*tablette*/
+@media screen and (min-width:768px) and (max-width:992px){
+
+    body{
+        max-width: 992px;
+        min-width: 768px;
+        box-shadow: $shadow-ligthen;
+    }
+    /*----------home page------------------*/
+
+/*section2/presenation*/
+
+#intro{
+    margin: 0;
+    .intro__description{
+        margin: 0;
+    }
+}
+
+/*section3/tutorial*/
+
+    #tuto{
+        width: 100%;
+        .tuto__list{
+            width: 100%;            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: auto;
+            &__btn{
+                width: 33%;
+                margin: 15px;
+            }
+        }
+        
+    }
+
+/*section4/restaurants*/
+
+    #restaurants{
+        width: 100%;
+        
+        .restaurants__set{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+            .card{
+                width: 33%;
+                margin: 15px;
+            
+            }
+
+        }
+    }
+
+/*footer media query desktop*/
+
+    #footer{
+        width: 100%;
+        text-align: center;
+        ul{
+            display: flex;
+            width: 100%;
+            li{
+                width: 25%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+/*------------restaurants pages-----------------------*/
+/*section2/3/4 menu/starter/main course/deserts*/
+
+    .menu{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .order{
+            width: 28%;
+        }
+
+    }
+}
+
+
+
+    
+
+/*sur les écrans, quand la largeur de la fenêtre est > à 992px*/ /*deskotp*/
+@media screen and (min-width:992px){
+    body{
+        min-width: 992px;
+        box-shadow: $shadow-ligthen;
+    }
+
+/*----------home page------------------*/
+
+/*section2/presenation*/
+
+#intro{
+    margin: 0;
+    .intro__description{
+        margin: 0;
+    }
+}
+
+/*section3/tutorial*/
+
+    #tuto{
+        width: 100%;
+        .tuto__list{
+            width: 100%;            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: auto;
+            &__btn{
+                width: 33%;
+                margin: 15px;
+            }
+        }
+        
+    }
+
+/*section4/restaurants*/
+
+    #restaurants{
+        width: 100%;
+        
+        .restaurants__set{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            
+            .card{
+                width: 34%;
+            
+            }
+
+        }
+    }
+
+/*footer media query desktop*/
+
+    #footer{
+        width: 100%;
+        text-align: center;
+        ul{
+            display: flex;
+            width: 100%;
+            li{
+                width: 25%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+/*------------restaurants pages-----------------------*/
+/*section2/3/4 menu/starter/main course/deserts*/
+
+    .menu{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .order{
+            width: 28%;
+        }
+
+    }
+}

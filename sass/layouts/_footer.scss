@@ -1,0 +1,30 @@
+#footer{
+    background-color: $clr-bg-footer;
+    color: white;
+    h5{
+        font-family: $police-logo-title;
+        font-size:large;
+        margin: 0;
+        padding: 20px;
+    }
+    ul{
+        margin: 0;
+        padding: 0 20px 40px 20px;
+        li{
+            padding: 5px;
+        }
+        a{
+            color: white;
+            font-family: $police-txt;
+            .forks{
+                font-size:medium;
+                padding-right: 10px;
+            }
+            .hand{
+                font-size:small;
+                padding-right: 10px;
+
+            }
+        }
+    }
+}

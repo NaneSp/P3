@@ -1,0 +1,294 @@
+
+
+/*----------home page------------------*/
+
+/*section1/research*/
+
+#location{
+    width: 100%;
+    height: 5%;
+    padding: 15px;
+    background-color: $clr-bg;
+    display: flex;
+    justify-content: center;
+    span{
+        display: flex;
+        justify-content: center;
+    }
+    input{
+        width: 65%;
+        text-align: center;
+        border: none;
+        background-color: #e1e3e53b;
+        font-family: $police-txt;
+        font-size:small;  
+        color: $clr-txt-input;  
+    }
+    i{
+        font-size: large;
+        color: $clr-txt-input;
+    }
+}
+
+/*section2/presenation*/
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 50px 10px;
+    font-family: $police-txt;
+    background-color: $clr-bg-lighten;
+    .intro__title{
+        margin: 0;
+        font-size:larger;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .intro__description{
+        padding: 0 10px 20px 10px;
+        font-size:medium;
+        color: $clr-txt-subtitle;
+        text-align: center;
+    }
+}
+
+/*section3/tutorial*/
+
+#tuto{
+    width: 100%;
+    height: 20%;
+    font-family: $police-txt;
+    padding: 10px;
+    nav{
+        width: 100%;
+        .tuto__list{
+            width: 98%;
+            padding: 10px;
+            &__btn{
+                font-size:small;
+                padding: 15px 0 15px 0;
+                background-color: $clr-bg-lighten;
+                border: none;
+                border-radius: 20px;
+                box-shadow: $shadow-ligthen;
+                margin-bottom: 20px;
+                &:hover{
+                    background-color: $clr-bg-primary-lighten;
+                    box-shadow: $shadow-darken;
+                }
+                &:hover i{
+                    color: $clr-primary;
+                }
+                .number{
+                    font-size:12px;
+                    background-color: $clr-primary;
+                    color: white;
+                    border: none;
+                    border-radius: 100px;
+                    width: 20px;
+                    height: 20px;
+                    margin-left: -10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    }
+                a{
+                    display: flex;
+                    align-items: center;
+                }
+                i{
+                    font-size: large;
+                    color: $clr-txt-icon;
+                    padding:0 20px 0 20px;    
+                }
+                span{
+                    font-size:small;
+                    margin: 0;
+                    
+                }
+                
+            }
+        }
+    
+        }
+    }
+    
+/*section4/restaurants*/
+
+#restaurants{
+    font-family: $police-txt;
+    width: 100%;
+    height: 65%;
+    background-color: $clr-bg-lighten;
+    padding: 20px;
+    .card{
+        border:none;
+        width: 97%;
+        border-radius: 20px;
+        background-color: #fff;
+        margin-bottom: 25px;
+        box-shadow: $shadow-ligthen;
+        position: relative;
+        &:hover{
+            box-shadow: $shadow-darken;
+        }
+        &__img{
+            border: none;
+            border-radius: 20px 20px 0 0;
+            width: 100%;
+            height: 135px;
+            object-fit:cover;
+        }
+        &__new{
+            margin: 0;
+            width: 80px;
+            top: 10px;
+            right: 10px;
+            background-color: $clr-tertiary;
+            text-align: center;
+            color: $clr-txt-new;
+            font-weight: bold;
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+            position: absolute;
+        }
+        #palette,#note,#francaise,#delice{
+            margin: 0;
+            font-size: large;
+            padding: 10px 0 2px 10px;
+            color: black;
+        }
+        &__location{
+            margin: 0;
+            padding: 0 0 20px 10px;
+            color: $clr-txt-subtitle;
+            font-size: medium;
+            font-weight: lighter;
+        }
+        .heart{
+            border: #0e906f solid;
+            width: 24px;
+            height: 27px;
+            position: absolute;
+            bottom: 35px;
+            right: 15px;   
+        }
+        
+
+    }
+}    
+
+/*------------restaurants pages-----------------------*/
+
+/*section1/picture + restaurant name*/
+.picture{
+    width: 100%;
+    height: 11%;
+    position: relative;
+
+    img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .title{
+        border:none;
+        display: flex;
+        justify-content:space-between;
+        background-color: $clr-bg-lighten;
+        border-radius: 35px 35px 0 0;
+        position: absolute;
+        width: 100%;
+        margin-top: -50px;
+    
+        &__resto{
+            font-family: $police-logo-title;
+            font-size:x-large;
+            font-weight: lighter;
+            padding: 20px 0 0 20px;
+            margin: 0;
+            position: relative;
+        }
+        &__heart{
+            border: #0e906f solid;
+            width: 27px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            .title__heart:hover{
+                background-color: $clr-primary;
+            }
+
+        }
+    }
+}
+
+/*section2/3/4 menu/starter/main course/deserts*/
+.menu{
+    
+    background-color: $clr-bg-lighten;
+    padding: 20px 10px 20px 10px;
+    font-family: $police-txt;
+    .title_underline{
+        border-bottom: $clr-tertiary solid 3px;
+        padding-bottom: 3px;
+    }
+    .order{
+        margin: 25px 0 25px 0;
+        border: none;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: $shadow-ligthen;
+        position: relative;
+        &:hover{
+            box-shadow: $shadow-darken;
+        }
+        &__name{
+            margin: 0;
+            font-size: 15px;
+            color: $clr-txt-bold;
+            padding: 10px 0 5px 10px;
+        }
+        &__name--with{
+            margin: 0;
+            padding: 0 0 10px 10px;
+            font-size: 12.5px;
+            font-weight: lighter;
+            color:$clr-txt-subtitle;
+        }
+        &__price{
+            width: 10%;
+            right: 10px;
+            bottom: -10px;
+            font-weight: bold;
+            color: $clr-txt-bold;
+            position: absolute;
+        }
+        &__spin{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background-color: $clr-tertiary;
+            color: white;
+            position: absolute;
+            height: 100%;
+            width: 17%;
+            border-radius: 0 15px 15px 0;
+            padding: 10px;
+            right: 0px;
+            bottom: 0px;
+            z-index: -1;
+            .order__spin:hover{
+                z-index: 1;
+
+            }
+        }
+    }
+
+}
+
