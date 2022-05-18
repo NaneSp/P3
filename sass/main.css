@@ -118,6 +118,7 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+    background-color: #f6f6f6;
   }
   .menu .menu__starter, .menu .menu__maincourse, .menu .menu__deserts {
     width: 33%;
@@ -222,6 +223,7 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+    background-color: #f6f6f6;
   }
   .menu .menu__starter, .menu .menu__maincourse, .menu .menu__deserts {
     width: 33%;
