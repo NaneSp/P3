@@ -10,12 +10,186 @@
 @import "./layouts/_footer";
 @import "./layouts/_header";
 
+/*loader*/
 
+$anim-dur:2000ms;
 
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    &::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 999;
+        animation: loading 3000ms forwards ease;
+    }      
+    &__l--1{  
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 44%;
+        font-family: $police-logo-title;
+        text-shadow: 20px 30px 20px $clr-primary;
+        font-size: 40px;               
+        color:black;      
+        animation:  loading 3000ms ease both, l $anim-dur backwards infinite;
+    }
+    &__l--2{  
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 46%;
+        font-family: $police-logo-title;
+        text-shadow: 20px 30px 20px $clr-primary;
+        font-size: 40px;               
+        color:black;      
+        animation:  loading 3000ms ease both, l $anim-dur backwards;
+    }
+    &__l--3{  
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 48%;
+        font-family: $police-logo-title;
+        text-shadow: 20px 30px 20px $clr-primary;
+        font-size: 40px;               
+        color:black;      
+        animation:  loading 3000ms ease both, l $anim-dur backwards infinite;
+    }
+    &__l--4{  
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        font-family: $police-logo-title;
+        text-shadow: 20px 30px 20px $clr-primary;
+        font-size: 40px;               
+        color:black;      
+        animation:  loading 3000ms ease both, l $anim-dur backwards;
+    }
+    &__l--5{  
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 52%;
+        font-family: $police-logo-title;
+        text-shadow: 20px 30px 20px $clr-primary;
+        font-size: 40px;               
+        color:black;      
+        animation:  loading 3000ms ease both, l $anim-dur backwards infinite;
+    }
+    &__l--6{  
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 54%;
+        font-family: $police-logo-title;
+        text-shadow: 20px 30px 20px $clr-primary;
+        font-size: 40px;               
+        color:black;      
+        animation:  loading 3000ms ease both, l $anim-dur backwards;
+    }
+    &__l--7{  
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 56%;
+        font-family: $police-logo-title;
+        text-shadow: 20px 30px 20px $clr-primary;
+        font-size: 40px;               
+        color:black;      
+        animation:  loading 3000ms ease both, l $anim-dur backwards ;
+    }
+    &__l--8{  
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 58%;
+        font-family: $police-logo-title;
+        text-shadow: 20px 30px 20px $clr-primary;
+        font-size: 40px;               
+        color:black;      
+        animation:  loading 3000ms ease both, l $anim-dur backwards infinite;
+    }
+    .knife{
+        position: absolute;
+        top: 30%;
+        z-index: 999;
+        font-size: 100px;
+        text-shadow: 20px 30px 20px $clr-primary;
+        color:black;     
+        animation: loading 3000ms ease both, knife1 3000ms both;
+    }
+    .knife2{
+        position: absolute;
+        top: 65%;
+        z-index: 999;
+        font-size: 100px;
+        text-shadow: 20px 30px 20px $clr-primary;
+        color:black;      
+        animation: loading 3000ms ease both, knife2 3000ms both;
+    }
+}
 
+@keyframes l {
+    0%{ transform: scaleY(0.5);
+    }
+    100%{transform: scaleY(1.0);}
+    }   
 
+@keyframes loading {
+    0%{ 
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+@keyframes knife1{
+    0% {
+        opacity: 0;
+        transform: translateX(-300%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(200%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-300%);
+    }
+}
 
-
+@keyframes knife2{
+    0% {
+        opacity: 0;
+        transform: translateX(200%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(-300%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(200%);
+    }
+}
 
 
 
