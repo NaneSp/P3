@@ -272,6 +272,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-shrink: 1;
             border: none;
             background-color: $clr-tertiary;
             color: white;
