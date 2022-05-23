@@ -1,4 +1,5 @@
 
+
 /*loader*/
 
 @keyframes l {
@@ -53,3 +54,20 @@
         transform: translateY(50%);
     }
 }
+
+/*-----------------end loader--------------*/
+
+/* cf container restaurants pages*/
+
+/*animation gradual on set*/
+
+@keyframes gradualonset{
+    from{
+        transform: scaleX(0.5);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+
+/*-----------------end animation gradual pages----------------*/

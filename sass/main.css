@@ -135,6 +135,31 @@
   }
 }
 
+/*-----------------end loader--------------*/
+/* cf container restaurants pages*/
+/*animation gradual on set*/
+@-webkit-keyframes gradualonset {
+  from {
+    -webkit-transform: scaleX(0.5);
+            transform: scaleX(0.5);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+@keyframes gradualonset {
+  from {
+    -webkit-transform: scaleX(0.5);
+            transform: scaleX(0.5);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+/*-----------------end animation gradual pages----------------*/
 /*dimension*/
 * {
   -webkit-box-sizing: border-box;
@@ -641,12 +666,17 @@ a {
 }
 
 #restaurants .card .heart {
-  border: #0e906f solid;
+  fill: orangered;
   width: 24px;
   height: 27px;
   position: absolute;
   bottom: 35px;
   right: 15px;
+  z-index: 1;
+}
+
+#restaurants .card .heart:hover {
+  background: #9356dc;
 }
 
 /*------------restaurants pages-----------------------*/
@@ -702,8 +732,6 @@ a {
 
 /*section2/3/4 menu/starter/main course/deserts*/
 .menu__starter {
-  -webkit-animation: gradualonset 1500ms forwards;
-          animation: gradualonset 1500ms forwards;
   background-color: #f6f6f6;
   padding: 20px 10px 20px 10px;
   font-family: "roboto", "sans-serif";
@@ -1000,30 +1028,6 @@ a {
           transform: rotate(0deg);
 }
 
-@-webkit-keyframes gradualonset {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes gradualonset {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 #footer {
   background-color: #353535;
   color: white;
@@ -1253,5 +1257,34 @@ header h1 img {
   color: rgba(0, 0, 0, 0.67);
   -webkit-animation: loading 3000ms ease both, knife2 3000ms both;
           animation: loading 3000ms ease both, knife2 3000ms both;
+}
+
+/*animation gradual On Set*/
+.anim--1 {
+  -webkit-animation: gradualonset 1000ms;
+          animation: gradualonset 1000ms;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.anim--2 {
+  -webkit-animation: gradualonset 1300ms;
+          animation: gradualonset 1300ms;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.anim--3 {
+  -webkit-animation: gradualonset 1600ms;
+          animation: gradualonset 1600ms;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.anim--4 {
+  -webkit-animation: gradualonset 1900ms;
+          animation: gradualonset 1900ms;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 /*# sourceMappingURL=main.css.map */
