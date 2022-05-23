@@ -229,7 +229,7 @@
 
 /*section2/3/4 menu/starter/main course/deserts*/
 .menu__starter{
-    
+    animation: gradualonset 1500ms forwards;
     background-color: $clr-bg-lighten;
     padding: 20px 10px 20px 10px;
     font-family: $police-txt;
@@ -448,3 +448,13 @@
     }
 
 
+@keyframes gradualonset{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{opacity: 1; 
+    }
+}

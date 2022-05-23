@@ -702,6 +702,8 @@ a {
 
 /*section2/3/4 menu/starter/main course/deserts*/
 .menu__starter {
+  -webkit-animation: gradualonset 1500ms forwards;
+          animation: gradualonset 1500ms forwards;
   background-color: #f6f6f6;
   padding: 20px 10px 20px 10px;
   font-family: "roboto", "sans-serif";
@@ -996,6 +998,30 @@ a {
 .menu__deserts .order__spin .check:hover {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+
+@-webkit-keyframes gradualonset {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes gradualonset {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #footer {
