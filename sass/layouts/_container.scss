@@ -239,7 +239,6 @@
     }
     .order{
         margin: 25px 0 25px 0;
-        padding: 6px;
         border: none;
         border-radius: 15px;
         background-color: white;
@@ -247,9 +246,10 @@
         overflow: hidden;
         display: flex;
         justify-content: space-between;
-        position: relative;
-        &:hover{
+        
+        &:hover .order__spin{
             box-shadow: $shadow-darken;
+            width: 20%;
         }
         &__name{
             margin: 0;
@@ -263,7 +263,7 @@
         }
         &__name__with{
             margin: 0;
-            padding-top: 2px;
+            padding: 2px 0 3px 0;
             font-size: 12.5px;
             font-weight: lighter;
             text-overflow: ellipsis;
@@ -274,6 +274,7 @@
         &__price{
             margin: 0;
             padding-top: 25px;
+            padding-right: 15px;
             font-weight: bold;
             color: $clr-txt-bold;
             
@@ -282,21 +283,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-shrink: 1;
             border: none;
             background-color: $clr-tertiary;
+            width: 0;
             color: white;
-            height: 100%;
-            width: 17%;
             border-radius: 0 15px 15px 0;
-            padding: 10px;
-            right: 0px;
-            bottom: 0px;
-            position: absolute;
-            z-index: -1;
+            transition: width 1000ms;
+            .check{
+                font-size: 20px;
+                transform: rotate(360deg);
+                transition: transform 500ms;
+                &:hover{
+                    transform: rotate(0deg);
+                }
+            }   
         }
     }
-
 }
 
 .menu__maincourse{
@@ -310,7 +312,6 @@
     }
     .order{
         margin: 25px 0 25px 0;
-        padding: 6px;
         border: none;
         border-radius: 15px;
         background-color: white;
@@ -318,9 +319,10 @@
         overflow: hidden;
         display: flex;
         justify-content: space-between;
-        position: relative;
-        &:hover{
+        
+        &:hover .order__spin{
             box-shadow: $shadow-darken;
+            width: 20%;
         }
         &__name{
             margin: 0;
@@ -334,7 +336,7 @@
         }
         &__name__with{
             margin: 0;
-            padding-top: 2px;
+            padding: 2px 0 3px 0;
             font-size: 12.5px;
             font-weight: lighter;
             text-overflow: ellipsis;
@@ -345,28 +347,31 @@
         &__price{
             margin: 0;
             padding-top: 25px;
+            padding-right: 15px;
             font-weight: bold;
             color: $clr-txt-bold;
+            
         }
         &__spin{
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-shrink: 1;
             border: none;
             background-color: $clr-tertiary;
+            width: 0;
             color: white;
-            height: 100%;
-            width: 17%;
             border-radius: 0 15px 15px 0;
-            padding: 10px;
-            right: 0px;
-            bottom: 0px;
-            position: absolute;
-            z-index: -1;
+            transition: width 1000ms;
+            .check{
+                font-size: 20px;
+                transform: rotate(360deg);
+                transition: transform 500ms;
+                &:hover{
+                    transform: rotate(0deg);
+                }
+            }   
         }
     }
-
 }
 
 .menu__deserts{
@@ -380,7 +385,6 @@
     }
     .order{
         margin: 25px 0 25px 0;
-        padding: 6px;
         border: none;
         border-radius: 15px;
         background-color: white;
@@ -388,9 +392,10 @@
         overflow: hidden;
         display: flex;
         justify-content: space-between;
-        position: relative;
-        &:hover{
+        
+        &:hover .order__spin{
             box-shadow: $shadow-darken;
+            width: 20%;
         }
         &__name{
             margin: 0;
@@ -404,7 +409,7 @@
         }
         &__name__with{
             margin: 0;
-            padding-top: 2px;
+            padding: 2px 0 3px 0;
             font-size: 12.5px;
             font-weight: lighter;
             text-overflow: ellipsis;
@@ -415,6 +420,7 @@
         &__price{
             margin: 0;
             padding-top: 25px;
+            padding-right: 15px;
             font-weight: bold;
             color: $clr-txt-bold;
             
@@ -423,18 +429,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-shrink: 1;
             border: none;
             background-color: $clr-tertiary;
+            width: 0;
             color: white;
-            height: 100%;
-            width: 17%;
             border-radius: 0 15px 15px 0;
-            padding: 10px;
-            right: 0px;
-            bottom: 0px;
-            position: absolute;
-            z-index: -1;
+            transition: width 1000ms;
+            .check{
+                font-size: 20px;
+                transform: rotate(360deg);
+                transition: transform 500ms;
+                &:hover{
+                    transform: rotate(0deg);
+                }
+            }   
         }
     }
     }
