@@ -11,7 +11,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: #fff;
+        background: $clr-tertiary;
         z-index: 999;
         animation: loading 3000ms forwards ease;
     }      
@@ -122,3 +122,60 @@
         animation: loading 3000ms ease both, knife2 3000ms both;
     }
 }
+
+/*keyframes loader*/
+
+@keyframes l {
+    0%{ transform: scaleY(0.5);
+    }
+    100%{transform: scaleY(2.0);}
+    }   
+
+@keyframes loading {
+    0%{ 
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+@keyframes knife1{
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes knife2{
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+}
+
+/*-----------------end loader--------------*/
