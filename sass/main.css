@@ -667,6 +667,7 @@ a {
 
 #restaurants .card .heart {
   fill: orangered;
+  color: #9356dc;
   width: 24px;
   height: 27px;
   position: absolute;
