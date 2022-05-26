@@ -1,28 +1,25 @@
 /*dimension*/
-*{ box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 
 /*general*/
-body{
+body {
     max-width: 768px;
     margin: auto;
     padding: 0;
-    cursor: pointer;
 }
 
-h2{
-    font-size:larger;
+h2 {
+    font-size: larger;
     font-family: $police-txt;
 }
 
-li{
+li {
     list-style-type: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-
-
-
-
-

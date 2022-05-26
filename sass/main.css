@@ -40,7 +40,6 @@ body {
   max-width: 768px;
   margin: auto;
   padding: 0;
-  cursor: pointer;
 }
 
 h2 {
@@ -144,7 +143,9 @@ a {
     width: 100%;
     background-color: #f6f6f6;
   }
-  .menu .menu__starter, .menu .menu__maincourse, .menu .menu__deserts {
+  .menu .menu__starter,
+  .menu .menu__maincourse,
+  .menu .menu__deserts {
     width: 33%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -157,7 +158,9 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .menu .menu__starter .order, .menu .menu__maincourse .order, .menu .menu__deserts .order {
+  .menu .menu__starter .order,
+  .menu .menu__maincourse .order,
+  .menu .menu__deserts .order {
     width: 97%;
   }
 }
@@ -167,8 +170,6 @@ a {
 @media screen and (min-width: 992px) {
   body {
     margin: 0;
-    -webkit-box-shadow: 0 5px 10px #e6e6e6;
-            box-shadow: 0 5px 10px #e6e6e6;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -176,15 +177,41 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
     max-width: none;
+    height: 100%;
+  }
+  h2 {
+    text-align: center;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80%;
   }
   /*----------home page------------------*/
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header h1 {
+    width: 50%;
+  }
   /*section2/presenation*/
   #intro {
     margin: 0;
+    width: 100%;
   }
   #intro .intro__description {
     margin: 0;
@@ -194,7 +221,6 @@ a {
     width: 100%;
   }
   #tuto .tuto__list {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -208,14 +234,25 @@ a {
     margin: auto;
   }
   #tuto .tuto__list__btn {
-    width: 33%;
-    margin: 15px;
+    width: 25%;
+    margin: 25px;
   }
   /*section4/restaurants*/
   #restaurants {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #restaurants .restaurants__set {
+    width: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -250,6 +287,16 @@ a {
   }
   /*------------restaurants pages-----------------------*/
   /*section2/3/4 menu/starter/main course/deserts*/
+  #header_resto {
+    height: 10%;
+  }
+  #header_resto h1 {
+    width: 50%;
+    text-align: left;
+  }
+  .picture {
+    width: 80%;
+  }
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -257,11 +304,13 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
+    width: 80%;
     background-color: #f6f6f6;
   }
-  .menu .menu__starter, .menu .menu__maincourse, .menu .menu__deserts {
-    width: 33%;
+  .menu .menu__starter,
+  .menu .menu__maincourse,
+  .menu .menu__deserts {
+    width: 35%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -273,12 +322,18 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .menu .menu__starter .order, .menu .menu__maincourse .order, .menu .menu__deserts .order {
-    width: 97%;
+  .menu .menu__starter .order,
+  .menu .menu__maincourse .order,
+  .menu .menu__deserts .order {
+    width: 80%;
+  }
+  .btn_resto {
+    width: 80%;
   }
 }
 
 #btn {
+  cursor: pointer;
   width: 190px;
   font-size: small;
   border: none;
@@ -404,6 +459,7 @@ a {
   height: 20%;
   font-family: "roboto", "sans-serif";
   padding: 10px;
+  cursor: pointer;
 }
 
 #tuto nav {
@@ -488,6 +544,7 @@ a {
   height: 65%;
   background-color: #f6f6f6;
   padding: 20px;
+  cursor: pointer;
 }
 
 #restaurants .card {
@@ -530,7 +587,10 @@ a {
   position: absolute;
 }
 
-#restaurants .card #palette, #restaurants .card #note, #restaurants .card #francaise, #restaurants .card #delice {
+#restaurants .card #palette,
+#restaurants .card #note,
+#restaurants .card #francaise,
+#restaurants .card #delice {
   margin: 0;
   font-size: large;
   padding: 10px 0 2px 10px;
@@ -546,31 +606,41 @@ a {
 }
 
 #restaurants .card .heart {
-  fill: orangered;
-  color: #9356dc;
-  width: 24px;
-  height: 27px;
-  position: absolute;
-  bottom: 35px;
-  right: 15px;
-  z-index: 1;
+  width: 27px;
+  position: relative;
+  bottom: 30px;
+  right: 30px;
+  stroke-width: 20;
+  stroke: black;
+  fill: white;
 }
 
-#restaurants .card .heart:hover {
-  background: #9356dc;
+#restaurants .card .heart--full {
+  stroke: none;
+  fill: url(#text-fill);
+  position: absolute;
+}
+
+#restaurants .card .heart--empty {
+  position: absolute;
+}
+
+#restaurants .card .heart--empty:hover {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 /*------------restaurants pages-----------------------*/
 /*section1/picture + restaurant name*/
 .picture {
-  width: 100%;
   height: 11%;
   position: relative;
 }
 
 .picture img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -599,16 +669,30 @@ a {
   position: relative;
 }
 
-.picture .title__heart {
-  border: #0e906f solid;
+.picture .title .heart {
   width: 27px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  position: relative;
+  bottom: 2px;
+  right: 10px;
+  stroke-width: 20;
+  stroke: black;
+  fill: #f6f6f6;
 }
 
-.picture .title__heart .title__heart:hover {
-  background-color: #9356dc;
+.picture .title .heart--full {
+  stroke: none;
+  fill: url(#text-fill);
+  position: absolute;
+}
+
+.picture .title .heart--empty {
+  position: absolute;
+}
+
+.picture .title .heart--empty:hover {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 /*section2/3/4 menu/starter/main course/deserts*/
@@ -910,6 +994,7 @@ a {
 }
 
 #footer {
+  height: 10%;
   background-color: #353535;
   color: white;
 }
@@ -950,8 +1035,6 @@ header {
   -webkit-box-shadow: 0 8px 10px lightgray;
           box-shadow: 0 8px 10px lightgray;
   padding: 20px 0 15px 0;
-  z-index: 1;
-  position: relative;
 }
 
 header h1 {
@@ -968,25 +1051,20 @@ header h1 img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 #header_resto .arrow {
-  padding-left: 20px;
   font-size: large;
   color: black;
 }
 
-#header_resto h1 {
-  width: 100%;
-}
-
-#header_resto h1 img {
+#header_resto img {
   width: 45%;
 }
 

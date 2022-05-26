@@ -1,20 +1,23 @@
-#btn{
+#btn {
+    cursor: pointer;
     width: 190px;
-    font-size:small;
+    font-size: small;
     border: none;
     border-radius: 35px;
     padding: 15px;
     box-shadow: $shadow-ligthen;
-    background: linear-gradient(to bottom right, lighten($clr-secondary,5)10%,darken($clr-primary,10)100%);
+    background: linear-gradient(to bottom right, lighten($clr-secondary, 5)10%, darken($clr-primary, 10)100%);
     color: #fff;
     position: relative;
     z-index: 1;
+
     &:hover {
-        &::after{
+        &::after {
             opacity: 1;
         }
     }
-    &::after{
+
+    &::after {
         border: none;
         border-radius: 35px;
         box-shadow: $shadow-darken;
@@ -24,7 +27,7 @@
         bottom: 0;
         right: 0;
         left: 0;
-        background: linear-gradient(to bottom right, lighten($clr-secondary,15)20%,darken($clr-primary,1)70%);
+        background: linear-gradient(to bottom right, lighten($clr-secondary, 15)20%, darken($clr-primary, 1)70%);
         z-index: -1;
         opacity: 0;
         transition: opacity 250ms;
@@ -34,7 +37,7 @@
 
 
 /*set button restaurant*/
-.btn_resto{
+.btn_resto {
     background-color: $clr-bg-lighten;
     display: flex;
     justify-content: center;

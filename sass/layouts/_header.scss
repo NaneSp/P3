@@ -1,35 +1,33 @@
 /*header home page*/
 
-header{
-    box-shadow:$shadow-darken;
+header {
+    box-shadow: $shadow-darken;
     padding: 20px 0 15px 0;
-    z-index: 1;
-    position: relative;
-    h1{
+
+    h1 {
         margin: 0;
         text-align: center;
-    img{
-        width: 40%;
-    }
+
+        img {
+            width: 40%;
+        }
     }
 }
 
 /*header restaurants pages*/
 
-#header_resto{
+#header_resto {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-        .arrow{
-            padding-left: 20px;
-            font-size: large;
-            color: black;
-        }
-        h1{
-            width: 100%;
-            img{
-                width: 45%;
-                
-            }
-        }
+
+    .arrow {
+        font-size: large;
+        color: black;
     }
+
+    img {
+        width: 45%;
+
+    }
+}

@@ -1,89 +1,100 @@
-/* sur les écrans, quand la largeur de la fenêtre est comprise entre 768px et 992px*/ /*tablette*/
-@media screen and (min-width:768px) and (max-width:992px){
+/* sur les écrans, quand la largeur de la fenêtre est comprise entre 768px et 992px*/
+/*tablette*/
+@media screen and (min-width:768px) and (max-width:992px) {
 
-    body{
+    body {
         max-width: 992px;
         min-width: 768px;
         box-shadow: $shadow-ligthen;
     }
+
     /*----------home page------------------*/
 
-/*section2/presenation*/
+    /*section2/presenation*/
 
-#intro{
-    margin: 0;
-    .intro__description{
+    #intro {
         margin: 0;
+
+        .intro__description {
+            margin: 0;
+        }
     }
-}
 
-/*section3/tutorial*/
+    /*section3/tutorial*/
 
-    #tuto{
+    #tuto {
         width: 100%;
-        .tuto__list{
-            width: 100%;            
+
+        .tuto__list {
+            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: center;
             margin: auto;
-            &__btn{
+
+            &__btn {
                 width: 33%;
                 margin: 15px;
             }
         }
-        
     }
 
-/*section4/restaurants*/
+    /*section4/restaurants*/
 
-    #restaurants{
+    #restaurants {
         width: 100%;
-        
-        .restaurants__set{
+
+        .restaurants__set {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            
-            .card{
+
+            .card {
                 width: 33%;
                 margin: 15px;
-            
+
             }
 
         }
     }
 
-/*footer media query desktop*/
+    /*footer media query desktop*/
 
-    #footer{
+    #footer {
         width: 100%;
         text-align: center;
-        ul{
+
+        ul {
             display: flex;
             width: 100%;
-            li{
+
+            li {
                 width: 25%;
                 display: flex;
                 justify-content: center;
             }
         }
     }
-/*------------restaurants pages-----------------------*/
+
+    /*------------restaurants pages-----------------------*/
 
 
-/*section2/3/4 menu/starter/main course/deserts*/
-    .menu{
+    /*section2/3/4 menu/starter/main course/deserts*/
+    .menu {
         display: flex;
         justify-content: center;
         width: 100%;
         background-color: $clr-bg-lighten;
-        .menu__starter, .menu__maincourse, .menu__deserts{
+
+        .menu__starter,
+        .menu__maincourse,
+        .menu__deserts {
             width: 33%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            .order{
+
+            .order {
                 width: 97%;
             }
         }
@@ -91,98 +102,148 @@
 }
 
 
-    
 
-/*sur les écrans, quand la largeur de la fenêtre est > à 992px*/ /*deskotp*/
-@media screen and (min-width:992px){
-    body{
+
+/*sur les écrans, quand la largeur de la fenêtre est > à 992px*/
+/*deskotp*/
+@media screen and (min-width:992px) {
+    body {
         margin: 0;
-        box-shadow: $shadow-ligthen;
         display: flex;
         flex-direction: column;
-        align-items:stretch;
         max-width: none;
+        height: 100%;
     }
 
-/*----------home page------------------*/
+    h2 {
+        text-align: center;
+    }
 
-/*section2/presenation*/
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80%;
+    }
 
-#intro{
-    margin: 0;
-    .intro__description{
+    /*----------home page------------------*/
+
+    header {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            width: 50%;
+        }
+    }
+
+    /*section2/presenation*/
+
+    #intro {
         margin: 0;
-    }
-}
-
-/*section3/tutorial*/
-
-    #tuto{
         width: 100%;
-        .tuto__list{
-            width: 100%;            
+
+        .intro__description {
+            margin: 0;
+        }
+    }
+
+    /*section3/tutorial*/
+
+    #tuto {
+        width: 100%;
+
+        .tuto__list {
             display: flex;
             flex-direction: row;
             justify-content: center;
             margin: auto;
-            &__btn{
-                width: 33%;
-                margin: 15px;
+
+            &__btn {
+                width: 25%;
+                margin: 25px;
             }
         }
-        
+
     }
 
-/*section4/restaurants*/
+    /*section4/restaurants*/
 
-    #restaurants{
+    #restaurants {
         width: 100%;
-        
-        .restaurants__set{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .restaurants__set {
+            width: 60%;
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
-            
-            .card{
+
+            .card {
                 width: 34%;
-            
             }
 
         }
     }
 
-/*footer media query desktop*/
+    /*footer media query desktop*/
 
-    #footer{
+    #footer {
         width: 100%;
         text-align: center;
-        ul{
+
+        ul {
             display: flex;
             width: 100%;
-            li{
+
+            li {
                 width: 25%;
                 display: flex;
                 justify-content: center;
             }
         }
     }
-/*------------restaurants pages-----------------------*/
-/*section2/3/4 menu/starter/main course/deserts*/
 
-    .menu{
+    /*------------restaurants pages-----------------------*/
+    /*section2/3/4 menu/starter/main course/deserts*/
+
+    #header_resto {
+        height: 10%;
+
+        h1 {
+            width: 50%;
+            text-align: left;
+        }
+    }
+
+    .picture {
+        width: 80%;
+
+    }
+
+    .menu {
         display: flex;
         justify-content: center;
-        width: 100%;
-        background-color:$clr-bg-lighten;
-        .menu__starter, .menu__maincourse, .menu__deserts{
-            width: 33%;
+        width: 80%;
+        background-color: $clr-bg-lighten;
+
+        .menu__starter,
+        .menu__maincourse,
+        .menu__deserts {
+            width: 35%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            .order{
-                width: 97%;
+
+            .order {
+                width: 80%;
             }
         }
     }
 
+    .btn_resto {
+        width: 80%;
+    }
 }

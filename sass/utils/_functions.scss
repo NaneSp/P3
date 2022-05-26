@@ -1,16 +1,13 @@
-
-
-
-
 /* cf container restaurants pages*/
 
 /*animation gradual on set*/
 
-@keyframes gradualonset{
-    from{
+@keyframes gradualonset {
+    from {
         transform: scaleX(0.5);
     }
-    to{
+
+    to {
         transform: scaleX(1);
     }
 }

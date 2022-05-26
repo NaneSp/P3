@@ -1,42 +1,60 @@
 /*------------restaurants pages-----------------------*/
 
 /*section1/picture + restaurant name*/
-.picture{
-    width: 100%;
+.picture {
     height: 11%;
     position: relative;
 
-    img{
+    img {
         width: 100%;
-        height: 300px;
+        height: 250px;
         object-fit: cover;
     }
-    .title{
-        border:none;
+
+    .title {
+        border: none;
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
         background-color: $clr-bg-lighten;
         border-radius: 35px 35px 0 0;
         position: absolute;
         width: 100%;
         margin-top: -50px;
-    
-        &__resto{
+
+        &__resto {
             font-family: $police-logo-title;
-            font-size:x-large;
+            font-size: x-large;
             font-weight: lighter;
             padding: 20px 0 0 20px;
             margin: 0;
             position: relative;
         }
-        &__heart{
-            border: #0e906f solid;
+
+        .heart {
             width: 27px;
+            position: relative;
+            bottom: 2px;
+            right: 10px;
+            stroke-width: 20;
+            stroke: black;
+            fill: $clr-bg-lighten;
+
+
+        }
+
+        .heart--full {
+            stroke: none;
+            fill: url(#text-fill);
             position: absolute;
-            right: 20px;
-            top: 20px;
-            .title__heart:hover{
-                background-color: $clr-primary;
+
+        }
+
+        .heart--empty {
+            position: absolute;
+
+            &:hover {
+                opacity: 0;
+                transition: 1s;
             }
 
         }
@@ -44,15 +62,17 @@
 }
 
 /*section2/3/4 menu/starter/main course/deserts*/
-.menu__starter{
+.menu__starter {
     background-color: $clr-bg-lighten;
     padding: 20px 10px 20px 10px;
     font-family: $police-txt;
-    .title_underline{
+
+    .title_underline {
         border-bottom: $clr-tertiary solid 3px;
         padding-bottom: 3px;
     }
-    .order{
+
+    .order {
         margin: 25px 0 25px 0;
         border: none;
         border-radius: 15px;
@@ -61,12 +81,13 @@
         overflow: hidden;
         display: flex;
         justify-content: space-between;
-        
-        &:hover .order__spin{
+
+        &:hover .order__spin {
             box-shadow: $shadow-darken;
             width: 20%;
         }
-        &__name{
+
+        &__name {
             margin: 0;
             font-size: 15px;
             text-overflow: ellipsis;
@@ -76,7 +97,8 @@
             color: $clr-txt-bold;
             padding: 10px 0 5px 10px;
         }
-        &__name__with{
+
+        &__name__with {
             margin: 0;
             padding: 2px 0 3px 0;
             font-size: 12.5px;
@@ -84,17 +106,19 @@
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
-            color:$clr-txt-subtitle;
+            color: $clr-txt-subtitle;
         }
-        &__price{
+
+        &__price {
             margin: 0;
             padding-top: 25px;
             padding-right: 15px;
             font-weight: bold;
             color: $clr-txt-bold;
-            
+
         }
-        &__spin{
+
+        &__spin {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -104,28 +128,32 @@
             color: white;
             border-radius: 0 15px 15px 0;
             transition: width 1000ms;
-            .check{
+
+            .check {
                 font-size: 20px;
                 transform: rotate(360deg);
                 transition: transform 500ms;
-                &:hover{
+
+                &:hover {
                     transform: rotate(0deg);
                 }
-            }   
+            }
         }
     }
 }
 
-.menu__maincourse{
-    
+.menu__maincourse {
+
     background-color: $clr-bg-lighten;
     padding: 20px 10px 20px 10px;
     font-family: $police-txt;
-    .title_underline{
+
+    .title_underline {
         border-bottom: $clr-tertiary solid 3px;
         padding-bottom: 3px;
     }
-    .order{
+
+    .order {
         margin: 25px 0 25px 0;
         border: none;
         border-radius: 15px;
@@ -134,12 +162,13 @@
         overflow: hidden;
         display: flex;
         justify-content: space-between;
-        
-        &:hover .order__spin{
+
+        &:hover .order__spin {
             box-shadow: $shadow-darken;
             width: 20%;
         }
-        &__name{
+
+        &__name {
             margin: 0;
             font-size: 15px;
             text-overflow: ellipsis;
@@ -149,7 +178,8 @@
             color: $clr-txt-bold;
             padding: 10px 0 5px 10px;
         }
-        &__name__with{
+
+        &__name__with {
             margin: 0;
             padding: 2px 0 3px 0;
             font-size: 12.5px;
@@ -157,17 +187,19 @@
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
-            color:$clr-txt-subtitle;
+            color: $clr-txt-subtitle;
         }
-        &__price{
+
+        &__price {
             margin: 0;
             padding-top: 25px;
             padding-right: 15px;
             font-weight: bold;
             color: $clr-txt-bold;
-            
+
         }
-        &__spin{
+
+        &__spin {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -177,28 +209,32 @@
             color: white;
             border-radius: 0 15px 15px 0;
             transition: width 1000ms;
-            .check{
+
+            .check {
                 font-size: 20px;
                 transform: rotate(360deg);
                 transition: transform 500ms;
-                &:hover{
+
+                &:hover {
                     transform: rotate(0deg);
                 }
-            }   
+            }
         }
     }
 }
 
-.menu__deserts{
-    
+.menu__deserts {
+
     background-color: $clr-bg-lighten;
     padding: 20px 10px 20px 10px;
     font-family: $police-txt;
-    .title_underline{
+
+    .title_underline {
         border-bottom: $clr-tertiary solid 3px;
         padding-bottom: 3px;
     }
-    .order{
+
+    .order {
         margin: 25px 0 25px 0;
         border: none;
         border-radius: 15px;
@@ -207,12 +243,13 @@
         overflow: hidden;
         display: flex;
         justify-content: space-between;
-        
-        &:hover .order__spin{
+
+        &:hover .order__spin {
             box-shadow: $shadow-darken;
             width: 20%;
         }
-        &__name{
+
+        &__name {
             margin: 0;
             font-size: 15px;
             text-overflow: ellipsis;
@@ -222,7 +259,8 @@
             color: $clr-txt-bold;
             padding: 10px 0 5px 10px;
         }
-        &__name__with{
+
+        &__name__with {
             margin: 0;
             padding: 2px 0 3px 0;
             font-size: 12.5px;
@@ -230,17 +268,19 @@
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
-            color:$clr-txt-subtitle;
+            color: $clr-txt-subtitle;
         }
-        &__price{
+
+        &__price {
             margin: 0;
             padding-top: 25px;
             padding-right: 15px;
             font-weight: bold;
             color: $clr-txt-bold;
-            
+
         }
-        &__spin{
+
+        &__spin {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -250,14 +290,16 @@
             color: white;
             border-radius: 0 15px 15px 0;
             transition: width 1000ms;
-            .check{
+
+            .check {
                 font-size: 20px;
                 transform: rotate(360deg);
                 transition: transform 500ms;
-                &:hover{
+
+                &:hover {
                     transform: rotate(0deg);
                 }
-            }   
+            }
         }
     }
-    }
+}

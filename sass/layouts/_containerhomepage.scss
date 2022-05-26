@@ -1,30 +1,31 @@
-
-
 /*----------home page------------------*/
 
 /*section1/research*/
 
-#location{
+#location {
     width: 100%;
     height: 5%;
     padding: 15px;
     background-color: $clr-bg;
     display: flex;
     justify-content: center;
-    span{
+
+    span {
         display: flex;
         justify-content: center;
     }
-    input{
+
+    input {
         width: 65%;
         text-align: center;
         border: none;
         background-color: #e1e3e53b;
         font-family: $police-txt;
-        font-size:small;  
-        color: $clr-txt-input;  
+        font-size: small;
+        color: $clr-txt-input;
     }
-    i{
+
+    i {
         font-size: large;
         color: $clr-txt-input;
     }
@@ -32,22 +33,24 @@
 
 /*section2/presenation*/
 
-#intro{
+#intro {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 10px 50px 10px;
     font-family: $police-txt;
     background-color: $clr-bg-lighten;
-    .intro__title{
+
+    .intro__title {
         margin: 0;
-        font-size:larger;
+        font-size: larger;
         text-align: center;
         padding-top: 20px;
     }
-    .intro__description{
+
+    .intro__description {
         padding: 0 10px 20px 10px;
-        font-size:medium;
+        font-size: medium;
         color: $clr-txt-subtitle;
         text-align: center;
     }
@@ -55,33 +58,40 @@
 
 /*section3/tutorial*/
 
-#tuto{
+#tuto {
     width: 100%;
     height: 20%;
     font-family: $police-txt;
     padding: 10px;
-    nav{
+    cursor: pointer;
+
+    nav {
         width: 100%;
-        .tuto__list{
+
+        .tuto__list {
             width: 98%;
             padding: 10px;
-            &__btn{
-                font-size:small;
+
+            &__btn {
+                font-size: small;
                 padding: 15px 0 15px 0;
                 background-color: $clr-bg-lighten;
                 border: none;
                 border-radius: 20px;
                 box-shadow: $shadow-ligthen;
                 margin-bottom: 20px;
-                &:hover{
+
+                &:hover {
                     background-color: $clr-bg-primary-lighten;
                     box-shadow: $shadow-darken;
                 }
-                &:hover i{
+
+                &:hover i {
                     color: $clr-primary;
                 }
-                .number{
-                    font-size:12px;
+
+                .number {
+                    font-size: 12px;
                     background-color: $clr-primary;
                     color: white;
                     border: none;
@@ -94,55 +104,63 @@
                     justify-content: center;
                     align-items: center;
                     position: absolute;
-                    }
-                a{
+                }
+
+                a {
                     display: flex;
                     align-items: center;
                 }
-                i{
+
+                i {
                     font-size: large;
                     color: $clr-txt-icon;
-                    padding:0 20px 0 20px;    
+                    padding: 0 20px 0 20px;
                 }
-                span{
-                    font-size:small;
+
+                span {
+                    font-size: small;
                     margin: 0;
-                    
+
                 }
-                
+
             }
         }
-    
-        }
+
     }
-    
+}
+
 /*section4/restaurants*/
 
-#restaurants{
+#restaurants {
     font-family: $police-txt;
     width: 100%;
     height: 65%;
     background-color: $clr-bg-lighten;
     padding: 20px;
-    .card{
-        border:none;
+    cursor: pointer;
+
+    .card {
+        border: none;
         width: 97%;
         border-radius: 20px;
         background-color: #fff;
         margin-bottom: 25px;
         box-shadow: $shadow-ligthen;
         position: relative;
-        &:hover{
+
+        &:hover {
             box-shadow: $shadow-darken;
         }
-        &__img{
+
+        &__img {
             border: none;
             border-radius: 20px 20px 0 0;
             width: 100%;
             height: 135px;
-            object-fit:cover;
+            object-fit: cover;
         }
-        &__new{
+
+        &__new {
             margin: 0;
             width: 80px;
             top: 10px;
@@ -156,35 +174,54 @@
             border-radius: 3px;
             position: absolute;
         }
-        #palette,#note,#francaise,#delice{
+
+        #palette,
+        #note,
+        #francaise,
+        #delice {
             margin: 0;
             font-size: large;
             padding: 10px 0 2px 10px;
             color: black;
         }
-        &__location{
+
+        &__location {
             margin: 0;
             padding: 0 0 20px 10px;
             color: $clr-txt-subtitle;
             font-size: medium;
             font-weight: lighter;
         }
-        .heart{
-            fill: orangered;
-            color: $clr-primary;
-            width: 24px;
-            height: 27px;
-            position: absolute;
-            bottom: 35px;
-            right: 15px;  
-            z-index: 1;
+
+
+        .heart {
+            width: 27px;
+            position: relative;
+            bottom: 30px;
+            right: 30px;
+            stroke-width: 20;
+            stroke: black;
+            fill: white;
+
+
         }
-        .heart:hover{
-        background: $clr-primary;
-    }
+
+        .heart--full {
+            stroke: none;
+            fill: url(#text-fill);
+            position: absolute;
+
+        }
+
+        .heart--empty {
+            position: absolute;
+
+            &:hover {
+                opacity: 0;
+                transition: 1s;
+            }
+
+        }
 
     }
-}    
-
-
-
+}
