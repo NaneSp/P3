@@ -1,0 +1,33 @@
+
+/*heart animation*/
+/*homepage and restaurants pages*/
+
+
+.heart {
+    width: 27px;
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+    stroke-width: 20;
+    stroke: black;
+    fill: white;
+
+
+}
+
+.heart--full {
+    stroke: none;
+    fill: url(#text-fill);
+    position: absolute;
+
+}
+
+.heart--empty {
+    position: absolute;
+
+    &:hover {
+        opacity: 0;
+        transition: 500ms;
+    }
+
+}

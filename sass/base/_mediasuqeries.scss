@@ -109,21 +109,23 @@
 @media screen and (min-width:992px) {
     body {
         margin: 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
         max-width: none;
-        height: 100%;
+        max-height: 1080px;
+
     }
 
     h2 {
         text-align: center;
+        margin: 10px;
     }
 
     main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 80%;
     }
 
     /*----------home page------------------*/
@@ -141,6 +143,7 @@
 
     #intro {
         margin: 0;
+        padding: 0;
         width: 100%;
 
         .intro__description {
@@ -161,7 +164,7 @@
 
             &__btn {
                 width: 25%;
-                margin: 25px;
+                margin-right: 30px;
             }
         }
 
@@ -175,8 +178,10 @@
         flex-direction: column;
         align-items: center;
 
+
         .restaurants__set {
             width: 60%;
+            margin-top: 10px;
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
@@ -209,8 +214,9 @@
     /*------------restaurants pages-----------------------*/
     /*section2/3/4 menu/starter/main course/deserts*/
 
+
     #header_resto {
-        height: 10%;
+
 
         h1 {
             width: 50%;
@@ -219,31 +225,38 @@
     }
 
     .picture {
-        width: 80%;
+        width: 60%;
+        padding-bottom: 50px;
+        background-color: $clr-bg-lighten;
 
     }
 
     .menu {
         display: flex;
         justify-content: center;
-        width: 80%;
+        width: 60%;
+        padding-top: 20px;
         background-color: $clr-bg-lighten;
 
         .menu__starter,
         .menu__maincourse,
         .menu__deserts {
-            width: 35%;
+
+            width: 100%;
+            padding-bottom: 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
 
             .order {
-                width: 80%;
+                width: 90%;
             }
         }
     }
 
     .btn_resto {
-        width: 80%;
+        width: 60%;
+        padding: 40px;
+
     }
 }
