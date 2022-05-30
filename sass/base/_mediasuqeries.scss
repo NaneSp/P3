@@ -112,6 +112,7 @@
         padding: 0;
         display: flex;
         flex-direction: column;
+        min-width: 992px;
         max-width: none;
         max-height: 1080px;
 
@@ -225,7 +226,7 @@
     }
 
     .picture {
-        width: 60%;
+        width: 80%;
         padding-bottom: 50px;
         background-color: $clr-bg-lighten;
 
@@ -234,8 +235,7 @@
     .menu {
         display: flex;
         justify-content: center;
-        width: 60%;
-        padding-top: 20px;
+        width: 80%;
         background-color: $clr-bg-lighten;
 
         .menu__starter,
@@ -255,7 +255,7 @@
     }
 
     .btn_resto {
-        width: 60%;
+        width: 80%;
         padding: 40px;
 
     }

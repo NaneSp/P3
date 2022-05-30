@@ -12,9 +12,9 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: $clr-tertiary;
+        background: white;
         z-index: 999;
-        animation: loading 3000ms forwards ease;
+        animation: loading 1500ms forwards ease;
     }
 
     &__l--1 {
@@ -26,7 +26,7 @@
         text-shadow: 20px 20px 10px $clr-primary;
         font-size: 40px;
         color: rgba(0, 0, 0, 0.469);
-        animation: loading 3000ms ease both, l $anim-dur backwards infinite;
+        animation: loading 1500ms ease both, l $anim-dur backwards infinite;
     }
 
     &__l--2 {
@@ -38,7 +38,7 @@
         text-shadow: 20px 20px 10px $clr-primary;
         font-size: 40px;
         color: rgba(0, 0, 0, 0.569);
-        animation: loading 3000ms ease both, l $anim-dur backwards;
+        animation: loading 1500ms ease both, l $anim-dur backwards;
     }
 
     &__l--3 {
@@ -50,7 +50,7 @@
         text-shadow: 20px 20px 10px $clr-primary;
         font-size: 40px;
         color: rgba(0, 0, 0, 0.669);
-        animation: loading 3000ms ease both, l $anim-dur backwards infinite;
+        animation: loading 1500ms ease both, l $anim-dur backwards infinite;
     }
 
     &__l--4 {
@@ -62,7 +62,7 @@
         text-shadow: 20px 20px 10px $clr-primary;
         font-size: 40px;
         color: rgba(0, 0, 0, 0.769);
-        animation: loading 3000ms ease both, l $anim-dur backwards;
+        animation: loading 1500ms ease both, l $anim-dur backwards;
     }
 
     &__l--5 {
@@ -74,7 +74,7 @@
         text-shadow: 20px 20px 10px $clr-primary;
         font-size: 40px;
         color: rgba(0, 0, 0, 0.669);
-        animation: loading 3000ms ease both, l $anim-dur backwards infinite;
+        animation: loading 1500ms ease both, l $anim-dur backwards infinite;
     }
 
     &__l--6 {
@@ -86,7 +86,7 @@
         text-shadow: 20px 20px 10px $clr-primary;
         font-size: 40px;
         color: rgba(0, 0, 0, 0.569);
-        animation: loading 3000ms ease both, l $anim-dur backwards;
+        animation: loading 1500ms ease both, l $anim-dur backwards;
     }
 
     &__l--7 {
@@ -98,7 +98,7 @@
         text-shadow: 20px 20px 10px $clr-primary;
         font-size: 40px;
         color: rgba(13, 13, 13, 0.469);
-        animation: loading 3000ms ease both, l $anim-dur backwards;
+        animation: loading 1500ms ease both, l $anim-dur backwards;
     }
 
     &__l--8 {
@@ -110,7 +110,7 @@
         text-shadow: 20px 20px 10px $clr-primary;
         font-size: 40px;
         color: rgba(0, 0, 0, 0.369);
-        animation: loading 3000ms ease both, l $anim-dur backwards infinite;
+        animation: loading 1500ms ease both, l $anim-dur backwards infinite;
     }
 
     .knife {
@@ -120,7 +120,7 @@
         font-size: 100px;
         text-shadow: 20px 20px 15px $clr-primary;
         color: rgba(0, 0, 0, 0.67);
-        animation: loading 3000ms ease both, knife1 3000ms both;
+        animation: loading 1500ms ease both, knife1 3000ms both;
     }
 
     .knife2 {
