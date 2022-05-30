@@ -185,6 +185,7 @@ a {
   text-decoration: none;
 }
 
+/*typographie cf utils/variables*/
 /* sur les écrans, quand la largeur de la fenêtre est comprise entre 768px et 992px*/
 /*tablette*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -295,8 +296,9 @@ a {
   }
 }
 
+/*---------------------------------end tablette-----------------------------------*/
 /*sur les écrans, quand la largeur de la fenêtre est > à 992px*/
-/*deskotp*/
+/*desktop*/
 @media screen and (min-width: 992px) {
   body {
     margin: 0;
