@@ -1,12 +1,49 @@
 /*loader*/
+/*cf keyframes in util/functions*/
 
-.loader {
+.spinner-box {
+    margin: 0;
+    top: 200px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: $police-logo-title;
+    font-size: xx-large;
+    text-shadow: $shadow-darken;
     pointer-events: none;
 
+    .border-1 {
+        width: 220px;
+        height: 220px;
+        padding: 6px;
+        position: absolute;
+        z-index: 999;
+        background: linear-gradient(to top left, #9356dc 0%, #99e2d0 100%);
+        animation: clockwise 2000ms ease 0s infinite alternate, loading 2500ms both;
+    }
+
+    .border-2 {
+        width: 220px;
+        padding: 3px;
+        z-index: 999;
+        background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
+        transform: rotate(45deg);
+        animation: unclockwise 1900ms ease 0s infinite alternate, loading 2500ms both;
+    }
+
+    .intern {
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+
     &::before {
-        content: '';
+        content: "";
         position: fixed;
         top: 0;
         left: 0;
@@ -14,192 +51,6 @@
         height: 100%;
         background: white;
         z-index: 999;
-        animation: loading 1500ms forwards ease;
-    }
-
-    &__l--1 {
-        position: absolute;
-        z-index: 999;
-        top: 50%;
-        left: 28%;
-        font-family: $police-logo-title;
-        text-shadow: 20px 20px 10px $clr-primary;
-        font-size: 40px;
-        color: rgba(0, 0, 0, 0.469);
-        animation: loading 1500ms ease both, l $anim-dur backwards infinite;
-    }
-
-    &__l--2 {
-        position: absolute;
-        z-index: 999;
-        top: 50%;
-        left: 35%;
-        font-family: $police-logo-title;
-        text-shadow: 20px 20px 10px $clr-primary;
-        font-size: 40px;
-        color: rgba(0, 0, 0, 0.569);
-        animation: loading 1500ms ease both, l $anim-dur backwards;
-    }
-
-    &__l--3 {
-        position: absolute;
-        z-index: 999;
-        top: 50%;
-        left: 43%;
-        font-family: $police-logo-title;
-        text-shadow: 20px 20px 10px $clr-primary;
-        font-size: 40px;
-        color: rgba(0, 0, 0, 0.669);
-        animation: loading 1500ms ease both, l $anim-dur backwards infinite;
-    }
-
-    &__l--4 {
-        position: absolute;
-        z-index: 999;
-        top: 50%;
-        left: 50%;
-        font-family: $police-logo-title;
-        text-shadow: 20px 20px 10px $clr-primary;
-        font-size: 40px;
-        color: rgba(0, 0, 0, 0.769);
-        animation: loading 1500ms ease both, l $anim-dur backwards;
-    }
-
-    &__l--5 {
-        position: absolute;
-        z-index: 999;
-        top: 50%;
-        left: 56%;
-        font-family: $police-logo-title;
-        text-shadow: 20px 20px 10px $clr-primary;
-        font-size: 40px;
-        color: rgba(0, 0, 0, 0.669);
-        animation: loading 1500ms ease both, l $anim-dur backwards infinite;
-    }
-
-    &__l--6 {
-        position: absolute;
-        z-index: 999;
-        top: 50%;
-        left: 61%;
-        font-family: $police-logo-title;
-        text-shadow: 20px 20px 10px $clr-primary;
-        font-size: 40px;
-        color: rgba(0, 0, 0, 0.569);
-        animation: loading 1500ms ease both, l $anim-dur backwards;
-    }
-
-    &__l--7 {
-        position: absolute;
-        z-index: 999;
-        top: 50%;
-        left: 65%;
-        font-family: $police-logo-title;
-        text-shadow: 20px 20px 10px $clr-primary;
-        font-size: 40px;
-        color: rgba(13, 13, 13, 0.469);
-        animation: loading 1500ms ease both, l $anim-dur backwards;
-    }
-
-    &__l--8 {
-        position: absolute;
-        z-index: 999;
-        top: 50%;
-        left: 70%;
-        font-family: $police-logo-title;
-        text-shadow: 20px 20px 10px $clr-primary;
-        font-size: 40px;
-        color: rgba(0, 0, 0, 0.369);
-        animation: loading 1500ms ease both, l $anim-dur backwards infinite;
-    }
-
-    .knife {
-        position: absolute;
-        top: 30%;
-        z-index: 999;
-        font-size: 100px;
-        text-shadow: 20px 20px 15px $clr-primary;
-        color: rgba(0, 0, 0, 0.67);
-        animation: loading 1500ms ease both, knife1 3000ms both;
-    }
-
-    .knife2 {
-        position: absolute;
-        top: 65%;
-        z-index: 999;
-        font-size: 100px;
-        text-shadow: 20px 20px 15px $clr-primary;
-        color: rgba(0, 0, 0, 0.67);
-        animation: loading 3000ms ease both, knife2 3000ms both;
+        animation: loading 2500ms forwards;
     }
 }
-
-/*keyframes loader*/
-
-@keyframes l {
-    0% {
-        transform: scaleY(0.5);
-    }
-
-    100% {
-        transform: scaleY(2.0);
-    }
-}
-
-@keyframes loading {
-    0% {
-        opacity: 1;
-    }
-
-    25% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    75% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes knife1 {
-    0% {
-        opacity: 0;
-        transform: translateY(-50%);
-    }
-
-    50% {
-        opacity: 1;
-        transform: translateY(50%);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(-50%);
-    }
-}
-
-@keyframes knife2 {
-    0% {
-        opacity: 0;
-        transform: translateY(50%);
-    }
-
-    50% {
-        opacity: 1;
-        transform: translateY(-50%);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(50%);
-    }
-}
-
-/*-----------------end loader--------------*/

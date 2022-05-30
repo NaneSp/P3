@@ -1,3 +1,87 @@
+/*---------------------------------loader-------------------------*/
+
+/*keyframes loader*/
+
+/*turn loader*/
+@keyframes clockwise {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes unclockwise {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    25% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(-135deg);
+    }
+
+    75% {
+        transform: rotate(-225deg);
+    }
+
+    100% {
+        transform: rotate(-315deg);
+    }
+}
+
+
+/*apparition loading*/
+
+@keyframes loading {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*-----------------------------end loader---------------------------*/
+
+
+
+
+
+
+
+/*-------------------gradualonset-----------------------------*/
 /* cf container restaurants pages*/
 
 /*animation gradual on set*/
