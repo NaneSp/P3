@@ -258,6 +258,10 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -268,6 +272,10 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -335,6 +343,10 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -417,6 +429,10 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -436,6 +452,10 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -461,7 +481,7 @@ a {
   .menu .menu__starter .order,
   .menu .menu__maincourse .order,
   .menu .menu__deserts .order {
-    width: 90%;
+    width: 70%;
   }
   .btn_resto {
     width: 80%;
@@ -521,6 +541,7 @@ a {
 }
 
 /*----------home page------------------*/
+/*header cf--->layouts/header*/
 /*section1/research*/
 #location {
   width: 100%;
@@ -558,7 +579,7 @@ a {
   color: #353535;
 }
 
-/*section2/presenation*/
+/*section2/presenation + button cf---> components/buttons*/
 #intro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -592,7 +613,6 @@ a {
 /*section3/tutorial*/
 #tuto {
   width: 100%;
-  height: 20%;
   font-family: "roboto", "sans-serif";
   padding: 10px;
   cursor: pointer;
@@ -640,6 +660,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -653,6 +677,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -669,7 +697,7 @@ a {
   margin: 0;
 }
 
-/*section4/restaurants*/
+/*section4/restaurants + heart--->cf components/animationheart*/
 #restaurants {
   font-family: "roboto", "sans-serif";
   width: 100%;
@@ -736,8 +764,11 @@ a {
   font-weight: lighter;
 }
 
+/*footer cf--->layouts/footer*/
 /*------------restaurants pages-----------------------*/
-/*section1/picture + restaurant name*/
+/*header cf--->layouts/header*/
+/*section1/picture + restaurant name + heart--->cf components/animationheart */
+/* + animationgradual cf--->components/animationsgradualonset*/
 .picture {
   height: 11%;
   position: relative;
@@ -755,6 +786,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -774,330 +809,8 @@ a {
   position: relative;
 }
 
-.picture .title .heart {
-  width: 27px;
-  position: relative;
-  bottom: 2px;
-  right: 10px;
-  stroke-width: 20;
-  stroke: black;
-  fill: #f6f6f6;
-}
-
-.picture .title .heart--full {
-  stroke: none;
-  fill: url(#text-fill);
-  position: absolute;
-}
-
-.picture .title .heart--empty {
-  position: absolute;
-}
-
-.picture .title .heart--empty:hover {
-  opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-/*section2/3/4 menu/starter/main course/deserts*/
-.menu__starter {
-  background-color: #f6f6f6;
-  padding: 20px 10px 20px 10px;
-  font-family: "roboto", "sans-serif";
-}
-
-.menu__starter .title_underline {
-  border-bottom: #99e2d0 solid 3px;
-  padding-bottom: 3px;
-}
-
-.menu__starter .order {
-  margin: 25px 0 25px 0;
-  border: none;
-  border-radius: 15px;
-  background-color: white;
-  -webkit-box-shadow: 0 5px 10px #e6e6e6;
-          box-shadow: 0 5px 10px #e6e6e6;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.menu__starter .order:hover .order__spin {
-  -webkit-box-shadow: 0 8px 10px lightgray;
-          box-shadow: 0 8px 10px lightgray;
-  width: 20%;
-}
-
-.menu__starter .order__name {
-  margin: 0;
-  font-size: 15px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  color: #111111;
-  padding: 10px 0 5px 10px;
-}
-
-.menu__starter .order__name__with {
-  margin: 0;
-  padding: 2px 0 3px 0;
-  font-size: 12.5px;
-  font-weight: lighter;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #5c5c5c;
-}
-
-.menu__starter .order__price {
-  margin: 0;
-  padding-top: 25px;
-  padding-right: 15px;
-  font-weight: bold;
-  color: #111111;
-}
-
-.menu__starter .order__spin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  background-color: #99e2d0;
-  width: 0;
-  color: white;
-  border-radius: 0 15px 15px 0;
-  -webkit-transition: width 500ms;
-  transition: width 500ms;
-}
-
-.menu__starter .order__spin .check {
-  font-size: 20px;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
-}
-
-.menu__starter .order__spin .check:hover {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-.menu__maincourse {
-  background-color: #f6f6f6;
-  padding: 20px 10px 20px 10px;
-  font-family: "roboto", "sans-serif";
-}
-
-.menu__maincourse .title_underline {
-  border-bottom: #99e2d0 solid 3px;
-  padding-bottom: 3px;
-}
-
-.menu__maincourse .order {
-  margin: 25px 0 25px 0;
-  border: none;
-  border-radius: 15px;
-  background-color: white;
-  -webkit-box-shadow: 0 5px 10px #e6e6e6;
-          box-shadow: 0 5px 10px #e6e6e6;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.menu__maincourse .order:hover .order__spin {
-  -webkit-box-shadow: 0 8px 10px lightgray;
-          box-shadow: 0 8px 10px lightgray;
-  width: 20%;
-}
-
-.menu__maincourse .order__name {
-  margin: 0;
-  font-size: 15px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  color: #111111;
-  padding: 10px 0 5px 10px;
-}
-
-.menu__maincourse .order__name__with {
-  margin: 0;
-  padding: 2px 0 3px 0;
-  font-size: 12.5px;
-  font-weight: lighter;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #5c5c5c;
-}
-
-.menu__maincourse .order__price {
-  margin: 0;
-  padding-top: 25px;
-  padding-right: 15px;
-  font-weight: bold;
-  color: #111111;
-}
-
-.menu__maincourse .order__spin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  background-color: #99e2d0;
-  width: 0;
-  color: white;
-  border-radius: 0 15px 15px 0;
-  -webkit-transition: width 500ms;
-  transition: width 500ms;
-}
-
-.menu__maincourse .order__spin .check {
-  font-size: 20px;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
-}
-
-.menu__maincourse .order__spin .check:hover {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-.menu__deserts {
-  background-color: #f6f6f6;
-  padding: 20px 10px 20px 10px;
-  font-family: "roboto", "sans-serif";
-}
-
-.menu__deserts .title_underline {
-  border-bottom: #99e2d0 solid 3px;
-  padding-bottom: 3px;
-}
-
-.menu__deserts .order {
-  margin: 25px 0 25px 0;
-  border: none;
-  border-radius: 15px;
-  background-color: white;
-  -webkit-box-shadow: 0 5px 10px #e6e6e6;
-          box-shadow: 0 5px 10px #e6e6e6;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.menu__deserts .order:hover .order__spin {
-  -webkit-box-shadow: 0 8px 10px lightgray;
-          box-shadow: 0 8px 10px lightgray;
-  width: 20%;
-}
-
-.menu__deserts .order__name {
-  margin: 0;
-  font-size: 15px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  color: #111111;
-  padding: 10px 0 5px 10px;
-}
-
-.menu__deserts .order__name__with {
-  margin: 0;
-  padding: 2px 0 3px 0;
-  font-size: 12.5px;
-  font-weight: lighter;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #5c5c5c;
-}
-
-.menu__deserts .order__price {
-  margin: 0;
-  padding-top: 25px;
-  padding-right: 15px;
-  font-weight: bold;
-  color: #111111;
-}
-
-.menu__deserts .order__spin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  background-color: #99e2d0;
-  width: 0;
-  color: white;
-  border-radius: 0 15px 15px 0;
-  -webkit-transition: width 500ms;
-  transition: width 500ms;
-}
-
-.menu__deserts .order__spin .check {
-  font-size: 20px;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
-}
-
-.menu__deserts .order__spin .check:hover {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
+/*section2/3/4 menu/starter/main course/deserts ---> cf components/animationspinandcheck*/
+/*footer cf--->layouts/footer*/
 #footer {
   height: 10%;
   background-color: #353535;
@@ -1181,6 +894,10 @@ header h1 img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1225,6 +942,10 @@ header h1 img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1247,40 +968,40 @@ header h1 img {
           animation: loading 2500ms forwards;
 }
 
-/*animation gradual On Set*/
-/*cf keyframes in utils/functions*/
 /*restaurants pages*/
+/*animation gradual On Set*/
+/*keyframes cf---> utils/functions*/
 .anim--1 {
   -webkit-animation: gradualonset 1000ms;
           animation: gradualonset 1000ms;
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 .anim--2 {
   -webkit-animation: gradualonset 1300ms;
           animation: gradualonset 1300ms;
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 .anim--3 {
   -webkit-animation: gradualonset 1600ms;
           animation: gradualonset 1600ms;
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 .anim--4 {
   -webkit-animation: gradualonset 1900ms;
           animation: gradualonset 1900ms;
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 /*heart animation*/
-/*homepage and restaurants pages*/
-.heart {
+/*homepage*/
+.hearthp {
   width: 27px;
   position: relative;
   bottom: 30px;
@@ -1292,7 +1013,7 @@ header h1 img {
 
 .heart--full {
   stroke: none;
-  fill: url(#text-fill);
+  fill: url(#heart-fill);
   position: absolute;
 }
 
@@ -1304,5 +1025,159 @@ header h1 img {
   opacity: 0;
   -webkit-transition: 500ms;
   transition: 500ms;
+}
+
+/*restaurants*/
+.heart {
+  width: 27px;
+  position: relative;
+  bottom: 2px;
+  right: 12px;
+  stroke-width: 20;
+  stroke: black;
+  fill: #f6f6f6;
+}
+
+.heart--full {
+  stroke: none;
+  fill: url(#heart-fill);
+  position: absolute;
+}
+
+.heart--empty {
+  position: absolute;
+}
+
+.heart--empty:hover {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.menu__starter,
+.menu__maincourse,
+.menu__deserts {
+  background-color: #f6f6f6;
+  padding: 20px 10px 20px 10px;
+  font-family: "roboto", "sans-serif";
+}
+
+.menu__starter .title_underline,
+.menu__maincourse .title_underline,
+.menu__deserts .title_underline {
+  border-bottom: #99e2d0 solid 3px;
+  padding-bottom: 3px;
+}
+
+.menu__starter .order,
+.menu__maincourse .order,
+.menu__deserts .order {
+  margin: 25px 0 25px 0;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 10px #e6e6e6;
+          box-shadow: 0 5px 10px #e6e6e6;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__starter .order:hover .order__spin,
+.menu__maincourse .order:hover .order__spin,
+.menu__deserts .order:hover .order__spin {
+  -webkit-box-shadow: 0 8px 10px lightgray;
+          box-shadow: 0 8px 10px lightgray;
+  width: 20%;
+}
+
+.menu__starter .order__name,
+.menu__maincourse .order__name,
+.menu__deserts .order__name {
+  margin: 0;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #111111;
+  padding: 10px 0 5px 10px;
+}
+
+.menu__starter .order__name__with,
+.menu__maincourse .order__name__with,
+.menu__deserts .order__name__with {
+  margin: 0;
+  padding: 2px 0 3px 0;
+  font-size: 12.5px;
+  font-weight: lighter;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #5c5c5c;
+}
+
+.menu__starter .order__price,
+.menu__maincourse .order__price,
+.menu__deserts .order__price {
+  margin: 0;
+  padding-top: 25px;
+  padding-right: 15px;
+  font-weight: bold;
+  color: #111111;
+}
+
+.menu__starter .order__spin,
+.menu__maincourse .order__spin,
+.menu__deserts .order__spin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: #99e2d0;
+  width: 0;
+  color: white;
+  border-radius: 0 15px 15px 0;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
+}
+
+.menu__starter .order__spin .check,
+.menu__maincourse .order__spin .check,
+.menu__deserts .order__spin .check {
+  font-size: 20px;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+.menu__starter .order__spin .check:hover,
+.menu__maincourse .order__spin .check:hover,
+.menu__deserts .order__spin .check:hover {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 /*# sourceMappingURL=main.css.map */

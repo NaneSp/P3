@@ -1,26 +1,27 @@
-/*animation gradual On Set*/
-/*cf keyframes in utils/functions*/
 /*restaurants pages*/
+/*animation gradual On Set*/
+/*keyframes cf---> utils/functions*/
+
 
 .anim--1 {
     animation: gradualonset 1000ms;
-    transform-origin: left;
+    transform-origin: top;
 
 }
 
 .anim--2 {
     animation: gradualonset 1300ms;
-    transform-origin: left;
+    transform-origin: top;
 
 }
 
 .anim--3 {
     animation: gradualonset 1600ms;
-    transform-origin: left;
+    transform-origin: top;
 
 }
 
 .anim--4 {
     animation: gradualonset 1900ms;
-    transform-origin: left;
+    transform-origin: top;
 }

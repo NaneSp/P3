@@ -27,9 +27,7 @@
 
         .tuto__list {
             width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            @include flex-row-center;
             margin: auto;
 
             &__btn {
@@ -70,8 +68,7 @@
 
             li {
                 width: 25%;
-                display: flex;
-                justify-content: center;
+                @include flex-row-center;
             }
         }
     }
@@ -81,8 +78,7 @@
 
     /*section2/3/4 menu/starter/main course/deserts*/
     .menu {
-        display: flex;
-        justify-content: center;
+        @include flex-row-center;
         width: 100%;
         background-color: $clr-bg-lighten;
 
@@ -90,9 +86,7 @@
         .menu__maincourse,
         .menu__deserts {
             width: 33%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-col-center;
 
             .order {
                 width: 97%;
@@ -124,16 +118,13 @@
     }
 
     main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-col-center;
     }
 
     /*----------home page------------------*/
 
     header {
-        display: flex;
-        justify-content: center;
+        @include flex-row-center;
 
         h1 {
             width: 50%;
@@ -158,9 +149,7 @@
         width: 100%;
 
         .tuto__list {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            @include flex-row-center;
             margin: auto;
 
             &__btn {
@@ -175,9 +164,7 @@
 
     #restaurants {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-col-center;
 
 
         .restaurants__set {
@@ -206,8 +193,7 @@
 
             li {
                 width: 25%;
-                display: flex;
-                justify-content: center;
+                @include flex-row-center;
             }
         }
     }
@@ -233,8 +219,7 @@
     }
 
     .menu {
-        display: flex;
-        justify-content: center;
+        @include flex-row-center;
         width: 80%;
         background-color: $clr-bg-lighten;
 
@@ -244,12 +229,10 @@
 
             width: 100%;
             padding-bottom: 50px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-col-center;
 
             .order {
-                width: 90%;
+                width: 70%;
             }
         }
     }

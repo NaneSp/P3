@@ -1,9 +1,8 @@
-
 /*heart animation*/
-/*homepage and restaurants pages*/
+/*homepage*/
 
 
-.heart {
+.hearthp {
     width: 27px;
     position: relative;
     bottom: 30px;
@@ -17,20 +16,50 @@
 
 .heart--full {
     stroke: none;
-    fill: url(#text-fill);
+    fill: url(#heart-fill);
     position: absolute;
 
-    
+
 
 }
 
 .heart--empty {
     position: absolute;
-    
+
 
     &:hover {
         opacity: 0;
         transition: 500ms;
+    }
+}
+
+/*restaurants*/
+
+.heart {
+    width: 27px;
+    position: relative;
+    bottom: 2px;
+    right: 12px;
+    stroke-width: 20;
+    stroke: black;
+    fill: $clr-bg-lighten;
+
+
+}
+
+.heart--full {
+    stroke: none;
+    fill: url(#heart-fill);
+    position: absolute;
+
+}
+
+.heart--empty {
+    position: absolute;
+
+    &:hover {
+        opacity: 0;
+        transition: 1s;
     }
 
 }

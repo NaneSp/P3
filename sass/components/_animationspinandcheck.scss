@@ -1,0 +1,79 @@
+.menu__starter,
+.menu__maincourse,
+.menu__deserts {
+    background-color: $clr-bg-lighten;
+    padding: 20px 10px 20px 10px;
+    font-family: $police-txt;
+
+    .title_underline {
+        border-bottom: $clr-tertiary solid 3px;
+        padding-bottom: 3px;
+    }
+
+    .order {
+        margin: 25px 0 25px 0;
+        border: none;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: $shadow-ligthen;
+        overflow: hidden;
+        @include flex-row-spacebetween;
+
+        &:hover .order__spin {
+            box-shadow: $shadow-darken;
+            width: 20%;
+        }
+
+        &__name {
+            margin: 0;
+            font-size: 15px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            flex-grow: 1;
+            color: $clr-txt-bold;
+            padding: 10px 0 5px 10px;
+        }
+
+        &__name__with {
+            margin: 0;
+            padding: 2px 0 3px 0;
+            font-size: 12.5px;
+            font-weight: lighter;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            color: $clr-txt-subtitle;
+        }
+
+        &__price {
+            margin: 0;
+            padding-top: 25px;
+            padding-right: 15px;
+            font-weight: bold;
+            color: $clr-txt-bold;
+
+        }
+
+        &__spin {
+            @include flex-row-center;
+            align-items: center;
+            border: none;
+            background-color: $clr-tertiary;
+            width: 0;
+            color: white;
+            border-radius: 0 15px 15px 0;
+            transition: width 500ms;
+
+            .check {
+                font-size: 20px;
+                transform: rotate(360deg);
+                transition: transform 500ms;
+
+                &:hover {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+}
