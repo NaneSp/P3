@@ -18,16 +18,16 @@ header {
 
 #header_resto {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    h1{
+        display: flex;
+        justify-content: center;
+    }
 
     .arrow {
         font-size: large;
         color: black;
     }
 
-    img {
-        width: 45%;
-
-    }
 }
