@@ -896,6 +896,7 @@ header h1 img {
 .spinner-box {
   margin: 0;
   top: 200px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -909,7 +910,7 @@ header h1 img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  position: absolute;
   font-family: "shrikhand", "sans-serif";
   font-size: xx-large;
   text-shadow: 0 8px 10px lightgray;

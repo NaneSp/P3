@@ -4,9 +4,10 @@
 .spinner-box {
     margin: 0;
     top: 200px;
+    width: 100%;
     @include flex-row-center;
     align-items: center;
-    position: relative;
+    position: absolute;
     font-family: $police-logo-title;
     font-size: xx-large;
     text-shadow: $shadow-darken;
@@ -56,4 +57,5 @@
         z-index: 999;
         animation: loading 2500ms forwards;
     }
+
 }
