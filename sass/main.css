@@ -140,22 +140,22 @@
 /*animation gradual on set*/
 @-webkit-keyframes gradualonset {
   from {
-    -webkit-transform: scaleX(0.5);
-            transform: scaleX(0.5);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
   to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 }
 @keyframes gradualonset {
   from {
-    -webkit-transform: scaleX(0.5);
-            transform: scaleX(0.5);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
   to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 }
 
@@ -931,6 +931,7 @@ header h1 img {
 
 .spinner-box .border-2 {
   width: 220px;
+  height: 220px;
   padding: 3px;
   z-index: 999;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
@@ -982,8 +983,8 @@ header h1 img {
 .anim--1 {
   -webkit-animation: gradualonset 1000ms;
           animation: gradualonset 1000ms;
-  -webkit-transform-origin: top;
-          transform-origin: top;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .anim--2 {
@@ -1058,8 +1059,8 @@ header h1 img {
 
 .heart--empty:hover {
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .menu__starter,

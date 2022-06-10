@@ -78,6 +78,7 @@
 
 
 
+
 /*-------------------gradualonset-----------------------------*/
 /* cf container restaurants pages*/
 
@@ -85,12 +86,15 @@
 
 @keyframes gradualonset {
     from {
-        transform: scaleX(0.5);
+        transform: scaleY(0);
+        
     }
 
     to {
-        transform: scaleX(1);
+        transform: scaleY(1);
+        
     }
 }
 
 /*-----------------end animation gradual pages----------------*/
+

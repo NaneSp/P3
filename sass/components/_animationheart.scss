@@ -27,7 +27,7 @@
     position: absolute;
 
 
-    &:hover {
+    &:hover{
         opacity: 0;
         transition: 500ms;
     }
@@ -59,7 +59,7 @@
 
     &:hover {
         opacity: 0;
-        transition: 1s;
+        transition: 500ms;
     }
 
 }
