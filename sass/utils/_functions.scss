@@ -86,12 +86,12 @@
 
 @keyframes gradualonset {
     from {
-        transform: scaleY(0);
+        transform: scaleX(0);
         
     }
 
     to {
-        transform: scaleY(1);
+        transform: scaleX(1);
         
     }
 }

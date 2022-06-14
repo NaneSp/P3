@@ -140,22 +140,22 @@
 /*animation gradual on set*/
 @-webkit-keyframes gradualonset {
   from {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
   }
   to {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
 }
 @keyframes gradualonset {
   from {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
   }
   to {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
 }
 
@@ -990,22 +990,22 @@ header h1 img {
 .anim--2 {
   -webkit-animation: gradualonset 1300ms;
           animation: gradualonset 1300ms;
-  -webkit-transform-origin: top;
-          transform-origin: top;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .anim--3 {
   -webkit-animation: gradualonset 1600ms;
           animation: gradualonset 1600ms;
-  -webkit-transform-origin: top;
-          transform-origin: top;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .anim--4 {
   -webkit-animation: gradualonset 1900ms;
           animation: gradualonset 1900ms;
-  -webkit-transform-origin: top;
-          transform-origin: top;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 /*heart animation*/
